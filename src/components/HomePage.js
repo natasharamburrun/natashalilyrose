@@ -1,12 +1,12 @@
-// function HomePage() {
-//   return (
-//         <div className="App">
-//       <header className="App-header">
-//         <h1>NATASHA LILY ROSE</h1>
-//         <h2 className="logo-script">Jewellery</h2>
-//       </header>
-//     </div>
-//   );
-// }
+function HomePage() {
+  return (
+    <article className='hero-section'>
+    <div className='Shop-now'>
+      <h1 className='bio'>SHOP</h1>
+      <a href='#about-me' className='button primary-button'></a>
+    </div>
+  </article>
+  );
+}
 
-// export default HomePage;
+export default HomePage;

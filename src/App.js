@@ -1,6 +1,6 @@
 import { BrowserRouter as ReactRouter, Routes, Route } from 'react-router-dom';
 
-// import HomePage from './components/HomePage';
+import HomePage from './components/HomePage';
 import Navbar from './components/NavBar'
 import reportWebVitals from './reportWebVitals';
 
@@ -11,7 +11,7 @@ function App () {
     <ReactRouter>
       <Navbar />
       <Routes>
-        {/* <Route path='/' element={<HomePage />} /> */}
+        <Route path='/' element={<HomePage />} />
       </Routes>
     </ReactRouter>
   );
