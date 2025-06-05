@@ -25,7 +25,11 @@
 
 @font-face {
   font-family: 'ScriptFont'; /* Choose a name for your font */
-  src: url('../../assets/fonts/SydneySansSerif-Regular.ttf') format('truetype'); /* Replace with the actual path and format */
+  src: url('../../assets/fonts/Sydney-Regular.ttf') format('truetype'); /* Replace with the actual path and format */
+}
+
+* {
+  font-family: 'BodyFont'
 }
 
 
@@ -34,7 +38,6 @@ h1 {
     font-size: 60px;
     font-weight: 900;
     line-height: 55px;
-    text-transform: uppercase;
     letter-spacing: 0px;
   }
   
@@ -43,7 +46,6 @@ h1 {
     font-size: 50px;
     font-weight: 900;
     line-height: 45px;
-    text-transform: uppercase;
     letter-spacing: 0px;
   }
   
@@ -52,7 +54,6 @@ h1 {
     font-size: 36px;
     font-weight: 900;
     line-height: 36px;
-    text-transform: uppercase;
     letter-spacing: 0px;
   }
   

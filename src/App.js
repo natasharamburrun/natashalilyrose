@@ -1,17 +1,25 @@
-import './styles/styles.scss';
-import logo from '../src/assets/images/branding/logo-small-final-packaging.svg'
+import { BrowserRouter as ReactRouter, Routes, Route } from 'react-router-dom';
 
-function App() {
+// import HomePage from './components/HomePage';
+import Navbar from './components/NavBar'
+import reportWebVitals from './reportWebVitals';
+
+import './styles/styles.scss';
+
+function App () {
   return (
-        <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-          NATASHA LILY ROSE JEWELLERY
-        </h1>
-      </header>
-    </div>
+    <ReactRouter>
+      <Navbar />
+      <Routes>
+        {/* <Route path='/' element={<HomePage />} /> */}
+      </Routes>
+    </ReactRouter>
   );
 }
 
 export default App;
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
