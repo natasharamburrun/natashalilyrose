@@ -1,0 +1,21 @@
+
+
+.hero-image {
+    background-image: url("../../assets/images/AdobeStock_image.jpeg");
+    background-repeat: no-repeat;
+    margin: 32px;
+    opacity: 50%;
+
+    background-position: center, bottom left;
+    background-size: cover;
+    height: 75vh;
+
+    // @media (max-width: 576px) {
+    //     background-position: center, bottom left;
+    //     background-size: cover, cover;
+    //     align-items: flex-start;
+    //     padding-top: 7.5rem;
+    //     height: 75vh;
+    //     max-height: 720px;
+    //   }
+}

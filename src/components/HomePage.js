@@ -1,11 +1,12 @@
 function HomePage() {
   return (
-    <article className='hero-section'>
-    <div className='Shop-now'>
-      <h1 className='bio'>SHOP</h1>
-      <a href='#about-me' className='button primary-button'></a>
-    </div>
-  </article>
+    <div className="hero-section">
+        <div className="hero-image">
+            <a href="/shop" className="btn btn-light" alt="shop the collection">
+                Shop Collection
+            </a>
+        </div>
+  </div>
   );
 }
 
