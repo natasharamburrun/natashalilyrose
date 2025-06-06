@@ -18,6 +18,22 @@
   }
 }
 
+.search-bar {
+  display: none;
+
+  @include breakpoint(lg) {
+    display: contents;
+  }
+}
+
+.shopping-cart {
+  display: none;
+
+  @include breakpoint(lg) {
+    display: contents;
+  }
+}
+
 .brand-title-and-logo {
   text-align: center;
   margin: 25px;
@@ -62,6 +78,9 @@
 .navbar-burger {
   display: flex;
   align-items: center;
+  top: 24px;
+  position: absolute;
+  right: 17px;
 }
 
 .nav-hamburger {
@@ -76,6 +95,7 @@
   z-index: 1000;
   top: 0;
   right: 100%;
+
   @include breakpoint(lg) {
     position: initial;
     right: 0;

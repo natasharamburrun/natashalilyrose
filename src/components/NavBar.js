@@ -56,13 +56,11 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-         <div className="navbar-right">
-         <div className="shopping-cart">
-                <p>cart</p>
-            </div> 
-            
-    
-        </div>
+            <div className="navbar-right">
+                <div className="shopping-cart">
+                    <p>cart</p>
+                </div>
+            </div>
     </nav>
   );
 }
