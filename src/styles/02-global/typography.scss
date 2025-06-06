@@ -28,20 +28,15 @@
   src: url('../../assets/fonts/Sydney-Regular.ttf') format('truetype'); /* Replace with the actual path and format */
 }
 
-* {
-  font-family: 'BodyFont'
-}
-
-
 h1 {
-    font-family: 'logoFont';
+    font-family: 'LogoFont';
     font-size: 18px;
     font-weight: 600;
     line-height: 18px;
     letter-spacing: 0px;
 
     @include breakpoint(lg) {
-      font-size: 60px;
+      font-size: 32px;
       font-weight: 900;
       line-height: 55px;
       letter-spacing: 0px;
@@ -49,16 +44,16 @@ h1 {
   }
   
   h2 {
-    font-family: 'BodyFont';
-    font-size: 50px;
-    font-weight: 900;
+    font-family: 'LogoFont';
+    font-size: 28px;
+    font-weight: 600;
     line-height: 45px;
     letter-spacing: 0px;
   }
   
   h3 {
     font-family: 'BodyFont';
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 900;
     line-height: 36px;
     letter-spacing: 0px;

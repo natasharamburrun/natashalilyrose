@@ -60,7 +60,7 @@ const Navbar = () => {
                 <div className="shopping-cart">
                     <p>cart</p>
                 </div>
-            </div>
+        </div>
     </nav>
   );
 }

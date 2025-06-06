@@ -1,5 +1,4 @@
 .navbar {
-  // max-width: 1111px;
   position: sticky;
   z-index: 1000;
   top: 0;
@@ -10,11 +9,8 @@
   background-color: $base-color-white;
 
   @include breakpoint(lg) {
-    margin: 64px auto 54px;
+    margin: 32px;
     padding-bottom: 32px;
-  }
-  @include breakpoint(xxl) {
-    margin: 0;
   }
 }
 
@@ -23,6 +19,7 @@
 
   @include breakpoint(lg) {
     display: contents;
+    padding: 25px;
   }
 }
 
@@ -40,6 +37,7 @@
 }
 
 .Header-title-text {
+  font-family: "LogoFont";
   font-size: 25px;
   white-space: nowrap;
 }
@@ -47,15 +45,17 @@
 .Header-sub-title-text {
   display: none;
   height: 125px;
-  
+  font-family: "ScriptFont";
+
   @include breakpoint(lg) {
     display: inline;
   }
 }
 .brand-logo {
   display: none;
-  height: 125px;
-  
+  width: 62px;
+  height: 60px;
+
   @include breakpoint(lg) {
     display: inline;
   }
@@ -64,8 +64,8 @@
 .navbar-center {
   @include breakpoint(lg) {
     display: inline-block;
-    justify-items: center;  }
- 
+    justify-items: center;
+  }
 }
 
 .menu-container {
@@ -117,11 +117,11 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: $base-color-white;;
-  // width: 350px;
+  background-color: $base-color-white;
   height: 186px;
   padding-left: 0;
   margin: 0;
+
   @include breakpoint(lg) {
     display: flex;
     flex-direction: row;
@@ -139,6 +139,8 @@
   line-height: 14px;
   letter-spacing: 2px;
   color: $base-color-white;
+  font-family: "BodyFont";
+
   @include breakpoint(lg) {
     padding-left: 43px;
   }
@@ -148,13 +150,6 @@
   text-decoration: none;
   color: black;
 }
-
-// .menu-item a {
-//   color: $base-white;
-//   @include breakpoint(lg) {
-//     color: $primary-color-greyish-dark-blue;
-//   }
-// }
 
 .navbar-hamburger,
 .navbar-close {
