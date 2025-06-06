@@ -86,6 +86,7 @@
 .nav-item.active {
   right: 0;
   top: 88px;
+  display: contents;
   @include breakpoint(lg) {
     top: 0;
   }
