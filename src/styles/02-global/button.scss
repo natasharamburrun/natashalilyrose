@@ -1,4 +1,92 @@
-$base-color-nude: #D5966C;
-$base-color-black: #151515;
-$base-color-grey: #444444;
-$base-color-white: #FFFFFF;
+.primary-button {
+  font-family: "BodyFont";
+  align-items: center;
+  background-color: $base-color-blue;
+  color: $base-color-white;
+  width: 200px;
+  padding: 12px;
+  letter-spacing: 2px;
+}
+
+.arrow-title {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 17px;
+}
+
+.arrow-down {
+  position: relative;
+  padding: 5px;
+  width: 48px;
+  height: 48px;
+  background-color: $base-color-blue;
+}
+
+.arrow-down span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-bottom: 1px solid $base-color-grey;
+  border-right: 1px solid $base-color-grey;
+  transform: translate(215%, 75%) rotate(45deg);
+}
+
+.arrow-down span:nth-child(1) {
+  opacity: 0.25;
+}
+
+.arrow-down span:nth-child(2) {
+  opacity: 0.5;
+}
+
+a:hover {
+  background-color: $base-color-blue;
+  .arrow-down {
+    background-color: #56a292;
+  }
+  .arrow-down span {
+    border-bottom: 1px solid $base-color-white;
+    border-right: 1px solid $base-color-white;
+  }
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:disabled,
+button[disabled] {
+  background-color: $base-color-grey;
+}
+
+.secondary-button {
+  height: 48px;
+  border: 1px solid;
+  padding: 0 38px;
+  font-family: "BodyFont";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: $base-color-grey;
+  color: $base-color-white;
+  width: 200px;
+  padding: 12px;
+  align-items: center;
+}
+
+.secondary-button:hover {
+  background-color: $base-color-blue;
+  color: $base-color-white;
+  border: none;
+}
+
+button:disabled,
+button[disabled] {
+  background-color: $base-color-white;
+}

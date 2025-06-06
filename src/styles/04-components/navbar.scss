@@ -9,8 +9,9 @@
   background-color: $base-color-white;
 
   @include breakpoint(lg) {
-    margin: 32px;
-    padding-bottom: 32px;
+    // margin: 0 auto;
+    margin: 42px 72px;
+    padding-bottom: 25px;
   }
 }
 
@@ -28,6 +29,7 @@
 
   @include breakpoint(lg) {
     display: contents;
+    padding: 25px;
   }
 }
 
