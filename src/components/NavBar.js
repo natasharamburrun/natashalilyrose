@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="navbar">
         <div className="navbar-left">
             <div className="search-bar">
-                <p>Search bar goes here</p>
+                <p>search</p>
             </div>    
         </div>
         <div className="navbar-center">
@@ -24,7 +24,7 @@ const Navbar = () => {
         	        <h1>NATASHA LILY ROSE</h1>
                 </div>
                 <div className='Header-sub-title-text'>
-                    <h1>Jewellery</h1>
+                    <h2>Jewellery</h2>
                 </div>
             </div>
             <div className="navbar-menu-section">
@@ -58,7 +58,7 @@ const Navbar = () => {
         </div>
          <div className="navbar-right">
          <div className="shopping-cart">
-                <p>Shopping cart goes here</p>
+                <p>cart</p>
             </div> 
             
     

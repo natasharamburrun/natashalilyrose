@@ -35,10 +35,17 @@
 
 h1 {
     font-family: 'logoFont';
-    font-size: 60px;
-    font-weight: 900;
-    line-height: 55px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
     letter-spacing: 0px;
+
+    @include breakpoint(lg) {
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 55px;
+      letter-spacing: 0px;
+    }
   }
   
   h2 {

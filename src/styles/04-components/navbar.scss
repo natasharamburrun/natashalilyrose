@@ -6,30 +6,50 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 32px;
-  padding-bottom: 32px;
+
   background-color: $base-color-white;
 
-  // @include breakpoint(lg) {
-  //   margin: 64px auto 54px;
-  // }
-  // @include breakpoint(xxl) {
-  //   margin: 0;
-  // }
-}
-
-.navbar-center {
-  display: inline-block;
-  justify-items: center;
-}
-
-.brand-logo {
-  height: 125px;
+  @include breakpoint(lg) {
+    margin: 64px auto 54px;
+    padding-bottom: 32px;
+  }
+  @include breakpoint(xxl) {
+    margin: 0;
+  }
 }
 
 .brand-title-and-logo {
   text-align: center;
   margin: 25px;
+}
+
+.Header-title-text {
+  font-size: 25px;
+  white-space: nowrap;
+}
+
+.Header-sub-title-text {
+  display: none;
+  height: 125px;
+  
+  @include breakpoint(lg) {
+    display: inline;
+  }
+}
+.brand-logo {
+  display: none;
+  height: 125px;
+  
+  @include breakpoint(lg) {
+    display: inline;
+  }
+}
+
+.navbar-center {
+  @include breakpoint(lg) {
+    display: inline-block;
+    justify-items: center;  }
+ 
 }
 
 .menu-container {
@@ -74,10 +94,10 @@
 .menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  // background-color: $primary-color-greyish-dark-blue;
-  width: 223px;
+  background-color: $base-color-white;;
+  // width: 350px;
   height: 186px;
   padding-left: 0;
   margin: 0;
