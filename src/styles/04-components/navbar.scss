@@ -9,8 +9,7 @@
   background-color: $base-color-white;
 
   @include breakpoint(lg) {
-    // margin: 0 auto;
-    margin: 42px 72px;
+    margin: 0 auto;
     padding-bottom: 25px;
   }
 }

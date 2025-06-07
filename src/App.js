@@ -13,7 +13,7 @@ function App () {
       <Navbar />
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/' element={<ProductPage />} />
+        <Route path='/Shop' element={<ProductPage />} />
       </Routes>
     </ReactRouter>
   );
