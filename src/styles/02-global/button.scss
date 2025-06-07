@@ -35,23 +35,8 @@
   transform: translate(215%, 75%) rotate(45deg);
 }
 
-.arrow-down span:nth-child(1) {
-  opacity: 0.25;
-}
-
-.arrow-down span:nth-child(2) {
-  opacity: 0.5;
-}
-
 a:hover {
-  background-color: $base-color-blue;
-  .arrow-down {
-    background-color: #56a292;
-  }
-  .arrow-down span {
-    border-bottom: 1px solid $base-color-white;
-    border-right: 1px solid $base-color-white;
-  }
+  background-color: $base-color-white;
 }
 
 a:link {

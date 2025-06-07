@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="navbar">
         <div className="navbar-left">
             <div className="search-bar">
-                <p>search</p>
+                <h3>search</h3>
             </div>    
         </div>
         <div className="navbar-center">
@@ -58,7 +58,7 @@ const Navbar = () => {
         </div>
             <div className="navbar-right">
                 <div className="shopping-cart">
-                    <p>cart</p>
+                    <h3>cart</h3>
                 </div>
         </div>
     </nav>
