@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "productName": "Silver heart necklace",
+    "productDescription": "Made out of sterling silver",
+    "price": 795.0,
+    "image": ""
+  },
+  {
+    "id": 2,
+    "productName": "9ct Gold Chain",
+    "productDescription": "Papercip chain",
+    "price": 1095.0,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "productName": "9ct gold nugget earings",
+    "productDescription": "yellow gold",
+    "price": 789.0,
+    "image": ""
+  },
+  {
+    "id": 4,
+    "productName": "sterling silver ring",
+    "productDescription": "bubbling ring",
+    "price": 295.0,
+    "image": ""
+  }
+]

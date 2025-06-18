@@ -4,14 +4,19 @@ const dotenv = require("dotenv");
 dotenv.config();
 const express = require("express");
 const cors = require("cors");
+const productRoutes = require("./routes/productRoutes")
 
 const app = express();
 const PORT = 8080;
-connectDB();
 
 app.use(cors());
 app.use(express.json());
 
-app.listen(PORT, () => {
-  console.log(`server started on port ${PORT}`);
+//routes
+app.use("/api/products", productRoutes)
+
+connectDB().then(() => {
+  app.listen(PORT, () => {
+    console.log(`server started on port ${PORT}`);
+  })
 });
