@@ -10,16 +10,16 @@ const Navbar = () => {
     setNavbarOpen(!navbarOpen);
   };
   return (
-    <nav className="navbar">
+    <nav className="sticky top-0 flex items-center place-content-between bg-white">
       <div className="navbar-left">
         <div className="search-bar">
           <h3>search</h3>
         </div>
       </div>
       <div className="navbar-center">
-        <div className="brand-title-and-logo">
+        <div className="font-harlow text-blue-950 text-center m-7">
           <Link to="/">
-            <img src={logo} className="brand-logo" alt="logo" />
+            <img src={logo} className="hidden sm:inline w-16 h-15" alt="logo" />
 
             <div className="Header-title-text">
               <h1>NATASHA LILY ROSE</h1>

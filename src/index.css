@@ -1,0 +1,28 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: harlow;
+    font-weight: 400;
+    src: url(/src/assets/fonts/harlowduoserifplain-regular-webfont.woff2)
+      format("woff2");
+  }
+  @font-face {
+    font-family: neueswissregular;
+    font-weight: 500;
+    src: url(/src/assets/fonts/NeueSwiss-Regular.woff) format("woff");
+  }
+}
+
+@theme {
+  --color-nude: #f7e6dd;
+  --color-black: #171712;
+  --color-grey: #434f59;
+  --color-white: #ffffff;
+  --color-blue: #323b5d;
+  --color-pinky-nude: #edded7;
+  --color-beige: #f0ebe8;
+}

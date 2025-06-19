@@ -6,6 +6,8 @@ import ProductPage from "./components/ProductPage";
 import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
 
+import "./index.css";
+
 function App() {
   return (
     <ReactRouter>
