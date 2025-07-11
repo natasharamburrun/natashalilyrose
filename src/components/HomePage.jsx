@@ -1,10 +1,12 @@
+import image from "../assets/images/AdobeStock_image2.jpeg";
+
 function HomePage() {
   return (
-    <div className="homepage">
-      <div className="hero-banner">
-        <div className="hero-button">
+    <div className="">
+      <div className="">
+        <img className="w-full" src={image}></img>
+        <div className="p-20 text-center">
           <h3 className="hero-intro">Shop the collection</h3>
-          <div />
           <a
             href="/shop"
             className="button primary-button"

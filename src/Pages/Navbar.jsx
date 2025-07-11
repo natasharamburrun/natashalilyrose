@@ -1,14 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/branding/logo-small-final-packaging_Blue.png";
-import icon from "../assets/images/icon/icons8-shopping-bag-26.png";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
-  const openMenu = () => {
-    setNavbarOpen(!navbarOpen);
-  };
+  // const openMenu = () => {
+  //   setNavbarOpen(!navbarOpen);
+  // };
   return (
     <div className="sticky top-0">
       <div className="m-3 justify-items-between-items-center items-center bg-white">
@@ -20,9 +19,6 @@ const Navbar = () => {
           />
           <div className="font-harlow text-blue-950 leading-3 text-center m-7 text-xl lg:text-2xl     text-wrap-mode: nowrap;">
             <h1>NATASHA LILY ROSE</h1>
-          </div>
-          <div className="font-harlow text-blue-950 leading-3 text-center m-7 text-xl lg:text-2xl">
-            <h2>Jewellery</h2>
           </div>
         </Link>
         <div className="">
@@ -42,10 +38,10 @@ const Navbar = () => {
             onClick={() => setNavbarOpen(!navbarOpen)}
           ></i>
           <div
-            className={`absolute lg:hidden top-24 left-0 w-full bg-white flex flex-col items-center font-semibold text-lg transform transition-transform ${
+            className={`absolute md:hidden top-19 left-0 w-full bg-white flex flex-col items-center font-semibold text-lg transform transition-transform ${
               navbarOpen ? "opacity-100" : "opacity-0"
             } `}
-            style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }}
+            style={{ transition: "transform 0.2s ease, opacity 0.2s ease" }}
           >
             <li className="font-harlow text-blue-950 list-none text-center curser-pointer">
               <Link to="/shop">Shop</Link>
