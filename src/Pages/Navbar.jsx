@@ -9,8 +9,8 @@ const Navbar = () => {
   //   setNavbarOpen(!navbarOpen);
   // };
   return (
-    <div className="sticky top-0">
-      <div className="m-3 justify-items-between-items-center items-center bg-white">
+    <div className="sticky top-0 flex-no-wrap z-10">
+      <div className="p-8 justify-items-between-items-center items-center bg-white">
         <Link to="/">
           <img
             src={logo}
@@ -34,12 +34,12 @@ const Navbar = () => {
             </li>
           </ul>
           <i
-            class="bx  bx-menu md:hidden block curser-pointer"
+            className="bx bx-menu md:hidden block curser-pointer"
             onClick={() => setNavbarOpen(!navbarOpen)}
           ></i>
           <div
             className={`absolute md:hidden top-19 left-0 w-full bg-white flex flex-col items-center font-semibold text-lg transform transition-transform ${
-              navbarOpen ? "opacity-100" : "opacity-0"
+              navbarOpen ? "opacity-100" : "opacity-0 hidden"
             } `}
             style={{ transition: "transform 0.2s ease, opacity 0.2s ease" }}
           >

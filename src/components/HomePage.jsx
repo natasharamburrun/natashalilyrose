@@ -1,11 +1,17 @@
 import image from "../assets/images/AdobeStock_image2.jpeg";
 
 function HomePage() {
+  const styles = {
+    backgroundImage: `url(${image})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+  };
+
   return (
-    <div className="">
-      <div className="">
-        <img className="w-full" src={image}></img>
-        <div className="p-20 text-center">
+    <div>
+      <div className="h-screen w-screen opacity-70" style={styles}>
+        <div className="h-full w-full flex flex-col justify-center px-[4rem] text-center">
           <h3 className="hero-intro">Shop the collection</h3>
           <a
             href="/shop"
