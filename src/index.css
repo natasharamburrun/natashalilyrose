@@ -11,7 +11,7 @@
       format("woff2");
   }
   @font-face {
-    font-family: neueswissregular;
+    font-family: neues;
     font-weight: 500;
     src: url(/src/assets/fonts/NeueSwiss-Regular.woff) format("woff");
   }

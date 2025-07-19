@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'harlow': ['harlow', 'sans-serif'], // Add 'sans-serif' as a fallback
+        'neues': ['neues', 'sans-serif']
       }
     },
   },
