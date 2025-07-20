@@ -7,14 +7,23 @@ module.exports = {
       fontFamily: {
         'harlow': ['harlow', 'sans-serif'], // Add 'sans-serif' as a fallback
         'neues': ['neues', 'sans-serif']
-      }
+      },
+         colors: {
+          'brand-nude': '#f7e6dd;',
+          'brand-black': '#434f59;',
+          'brand-white': '#e2d8d7;',
+          'brand-blue': '#323b5d;',
+          'brand-pinky': '#edded7;',
+          'brand-beige': '#f0ebe8;',
+          'brand-brown': '#917171;',
     },
     backgroundColor: theme => ({
       ...theme('colors'),
       'primary': '#f4f2f2',
-      'secondary': '#ffed4a',
-      'danger': '#e3342f',
-      })
+      'secondary': '#917171',
+      }),
+    },
+  
   },
 
    variants: {

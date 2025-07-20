@@ -17,19 +17,19 @@ const Navbar = () => {
             className="hidden md:flex justify-self-center w-16 h-15"
             alt="logo"
           />
-          <div className="font-harlow text-blue-950 leading-3 text-center m-7 text-xl lg:text-4xl text-wrap-mode: nowrap;">
+          <div className="font-harlow text-brand-blue leading-3 text-center m-7 text-xl lg:text-4xl text-wrap-mode: nowrap;">
             <h1>NATASHA LILY ROSE</h1>
           </div>
         </Link>
         <div className="">
-          <ul className="font-neues text-lg tracking-wider text-blue-950 hidden md:flex flex-row justify-center items-center text-center gap-12">
-            <li className="list-none text-center curser-pointer">
+          <ul className="font-neues text-lg tracking-wider text-brand-blue hidden md:flex flex-row justify-center items-center text-center gap-12">
+            <li className="list-none text-center curser-pointer hover:text-brand-brown">
               <Link to="/shop">Shop</Link>
             </li>
-            <li className="list-none text-center curser-pointer">
+            <li className="list-none text-center curser-pointer hover:text-brand-brown">
               <Link to="/about">About</Link>
             </li>
-            <li className="list-none text-center curser-pointer">
+            <li className="list-none text-center curser-pointer hover:text-brand-brown">
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
@@ -43,13 +43,13 @@ const Navbar = () => {
             } `}
             style={{ transition: "transform 0.2s ease, opacity 0.2s ease" }}
           >
-            <li className="font-neues text-blue-950 list-none text-center curser-pointer">
+            <li className="font-neues text-brand-blue list-none text-center curser-pointer hover:text-brand-brown">
               <Link to="/shop">Shop</Link>
             </li>
-            <li className="font-neues text-blue-950 list-none text-center curser-pointer">
+            <li className="font-neues text-brand-blue list-none text-center curser-pointer hover:text-brand-brown">
               <Link to="/about">About</Link>
             </li>
-            <li className="font-neues text-blue-950 list-none text-center curser-pointer">
+            <li className="font-neues text-brand-blue list-none text-center curser-pointer hover:text-brand-brown">
               <Link to="/contact">Contact</Link>
             </li>
           </div>
