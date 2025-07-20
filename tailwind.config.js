@@ -9,7 +9,14 @@ module.exports = {
         'neues': ['neues', 'sans-serif']
       }
     },
+    backgroundColor: theme => ({
+      ...theme('colors'),
+      'primary': '#f4f2f2',
+      'secondary': '#ffed4a',
+      'danger': '#e3342f',
+      })
   },
+
    variants: {
      extend: {},
    },

@@ -9,8 +9,8 @@ const Navbar = () => {
   //   setNavbarOpen(!navbarOpen);
   // };
   return (
-    <div className="sticky top-0 flex-no-wrap z-10">
-      <div className="p-8 justify-items-between-items-center items-center bg-white">
+    <div className="sticky top-0 flex-no-wrap z-10 bg-primary">
+      <div className="p-4 justify-items-between-items-center items-center">
         <Link to="/">
           <img
             src={logo}
@@ -22,7 +22,7 @@ const Navbar = () => {
           </div>
         </Link>
         <div className="">
-          <ul className="font-harlow text-blue-950 hidden md:flex flex-row justify-center items-center text-center gap-12">
+          <ul className="font-neues text-lg tracking-wider text-blue-950 hidden md:flex flex-row justify-center items-center text-center gap-12">
             <li className="list-none text-center curser-pointer">
               <Link to="/shop">Shop</Link>
             </li>
@@ -34,22 +34,22 @@ const Navbar = () => {
             </li>
           </ul>
           <i
-            className="bx bx-menu md:hidden block curser-pointer"
+            className="bx bx-menu md:hidden block curser-pointer absolute top-6 left-0 pt-4 pl-4"
             onClick={() => setNavbarOpen(!navbarOpen)}
           ></i>
           <div
-            className={`absolute md:hidden top-19 left-0 w-full bg-white flex flex-col items-center font-semibold text-lg transform transition-transform ${
+            className={`static md:hidden top-19 left-0 w-full bg-primary flex flex-col items-center font-semibold text-lg leading-8 tracking-wide transform transition-transform ${
               navbarOpen ? "opacity-100" : "opacity-0 hidden"
             } `}
             style={{ transition: "transform 0.2s ease, opacity 0.2s ease" }}
           >
-            <li className="font-harlow text-blue-950 list-none text-center curser-pointer">
+            <li className="font-neues text-blue-950 list-none text-center curser-pointer">
               <Link to="/shop">Shop</Link>
             </li>
-            <li className="font-harlow text-blue-950 list-none text-center curser-pointer">
+            <li className="font-neues text-blue-950 list-none text-center curser-pointer">
               <Link to="/about">About</Link>
             </li>
-            <li className="font-harlow text-blue-950 list-none text-center curser-pointer">
+            <li className="font-neues text-blue-950 list-none text-center curser-pointer">
               <Link to="/contact">Contact</Link>
             </li>
           </div>
