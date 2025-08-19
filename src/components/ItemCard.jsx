@@ -5,7 +5,7 @@ export function ItemCard({ product }) {
     <div className="justify-center m-10 p-3 max-w-sm bg-white">
       <Link to={`/shop/${product._id}`} className="">
         <img
-          className="h-28 w-83 md:h-52 md:w-120 flex justify-self-center"
+          className="h-sm w-sm md:h-xl md:w-xl flex justify-self-center"
           src={product.image}
         ></img>
         <section>

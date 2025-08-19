@@ -11,8 +11,13 @@ const AboutPage = () => {
         />
       </div>
       <div className="p-3 m-10">
-        <h2 className="font-light text-xl my-9">Natasha Lily Rose</h2>
-        <p className="content">
+        <h2 className="font-neues font-bold text-brand-blue leading-3 text-2xl md:text-3xl lg:text-4xl my-8">
+          Natasha Ramburrun
+          <span className="font-neues font-light text-brand-blue leading-3 text-lg">
+            Founder
+          </span>
+        </h2>
+        <p className="font-neues font-light text-brand-blue">
           Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros.
           Donec id elit non mi porta gravida at eget metus. Cum sociis natoque
           penatibus et magnis dis parturient montes, nascetur ridiculus mus.
