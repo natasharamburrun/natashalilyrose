@@ -3,15 +3,15 @@ import about from "../assets/images/about.JPG";
 
 const AboutPage = () => {
   return (
-    <div className="flex flex-col justify-center md:flex-row bg-primary">
-      <div className="p-3 m-10">
+    <div className="justify-center bg-primary md:grid md:grid-cols-2 md:gap-4 md-p-5">
+      <div className="p-3 mx-10 md:m-10 max-w-md max-h-md flex justify-self-center">
         <img
           src={about}
-          alt="A photo of the business owner working in her studio "
+          alt="A photo of the business owner working in her studio"
         />
       </div>
       <div className="p-3 m-10">
-        <h2 className="font-bold text-xl my-3">Natasha Lily Rose</h2>
+        <h2 className="font-light text-xl my-9">Natasha Lily Rose</h2>
         <p className="content">
           Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros.
           Donec id elit non mi porta gravida at eget metus. Cum sociis natoque

@@ -15,7 +15,7 @@ function ShopPage() {
 
   return (
     <div className="shop-content">
-      <div className="bg-primary p-3 md:grid md:grid-cols-2 lg:grid-cols-4">
+      <div className="bg-primary md:grid md:grid-cols-2 md:gap-4 md-p-5 lg:grid-cols-3">
         {products.map((product) => {
           return <ItemCard product={product} />;
         })}

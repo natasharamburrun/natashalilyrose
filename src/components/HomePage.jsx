@@ -26,7 +26,7 @@ function HomePage() {
         </div>
       </div>
       <div className="h-screen w-screen bg-primary flex flex-col px-[4rem] justify-center">
-        <p className="font-neues text-lg leading-8 md:text-4xl tracking-wide font-semibold text-blue-950 text-center content-center mb-1 py-[6rem] lg:p-16">
+        <p className="font-neues text-lg leading-8 md:text-4xl tracking-wide font-semibold text-blue-950 text-center content-center mb-1 py-[2rem] lg:p-16">
           Natasha Lily Rose creates timeless, classic, handmade jewellery that
           carries sentimental value and can be passed down through generations
           as cherished heirlooms.

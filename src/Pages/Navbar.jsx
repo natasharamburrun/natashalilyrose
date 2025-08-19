@@ -17,9 +17,9 @@ const Navbar = () => {
             className="hidden md:flex justify-self-center w-16 h-15"
             alt="logo"
           />
-          <div className="font-harlow text-brand-blue leading-3 text-center m-7 text-xl lg:text-4xl text-wrap-mode: nowrap;">
-            <h1>NATASHA LILY ROSE</h1>
-          </div>
+          <h1 className="font-harlow font-bold text-brand-blue leading-3 text-center m-7 text-2xl md:text-3xl lg:text-4xl text-wrap-mode: nowrap;">
+            NATASHA LILY ROSE
+          </h1>
         </Link>
         <div className="">
           <ul className="font-neues text-lg tracking-wider text-brand-blue hidden md:flex flex-row justify-center items-center text-center gap-12">
