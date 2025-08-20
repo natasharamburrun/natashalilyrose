@@ -5,15 +5,19 @@ export function ItemCard({ product }) {
     <div className="justify-center m-10 p-3 max-w-sm bg-white">
       <Link to={`/shop/${product._id}`} className="">
         <img
-          className="h-sm w-sm md:h-xl md:w-xl flex justify-self-center"
+          className="h-sm w-sm md:max-h-xl md:w-xl flex justify-self-center"
           src={product.image}
         ></img>
         <section>
-          <h2 className="font-bold text-1xl md:text-2xl">
+          <h2 className="font-neues font-bold text-brand-blue leading-3 text-1xl md:text-2xl">
             {product.productName}
           </h2>
-          <p className="text-md">{product.productDescription}</p>
-          <h3 className="font-light text-3xl my-3">{product.price}</h3>
+          <p className="font-neues font-bold text-brand-blue leading-3 text-md">
+            {product.productDescription}
+          </p>
+          <h3 className="font-neues font-light text-brand-blue leading-3 text-3xl my-3">
+            {product.price}
+          </h3>
         </section>
       </Link>
     </div>

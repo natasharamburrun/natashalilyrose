@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
@@ -16,12 +17,12 @@ module.exports = {
           'brand-pinky': '#edded7;',
           'brand-beige': '#f0ebe8;',
           'brand-brown': '#917171;',
-    },
-    backgroundColor: theme => ({
-      ...theme('colors'),
-      'primary': '#f4f2f2',
-      'secondary': '#917171',
-      }),
+      },
+        backgroundColor: theme => ({
+          ...theme('colors'),
+          'primary': '#f4f2f2',
+          'secondary': '#917171',  
+        }),
     },
   
   },

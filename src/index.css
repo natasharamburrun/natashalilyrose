@@ -16,14 +16,3 @@
     src: url(/src/assets/fonts/NeueSwiss-Regular.woff) format("woff");
   }
 }
-
-@theme {
-  --color-nude: #f7e6dd;
-  --color-black: #171712;
-  --color-grey: #434f59;
-  --color-white: #ffffff;
-  --color-blue: #323b5d;
-  --color-pinky-nude: #edded7;
-  --color-beige: #f0ebe8;
-  --color-pages: #e2d8d7;
-}
