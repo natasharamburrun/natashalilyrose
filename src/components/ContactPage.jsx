@@ -1,6 +1,6 @@
 import ContactUsForm from "../Pages/ContactUsForm";
 
-function ContactForm() {
+function ContactPage() {
   return (
     <div className="bg-primary">
       <div className="max-w-6xl mx-auto p-4 md:p-16 xl:p-20">
@@ -37,4 +37,4 @@ function ContactForm() {
     </div>
   );
 }
-export default ContactForm;
+export default ContactPage;
