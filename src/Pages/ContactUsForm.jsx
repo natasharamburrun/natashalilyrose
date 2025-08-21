@@ -15,7 +15,8 @@ export default function ContactUsForm() {
   const [message, setMessage] = useState(false);
 
   // Please update the Access Key in the .env
-  const apiKey = "660bb35f-7cdd-41f4-a7aa-46045ec6dff7";
+  const apiKey =
+    import.meta.env.PUBLIC_ACCESS_KEY || "660bb35f-7cdd-41f4-a7aa-46045ec6dff7";
 
   const { submit: onSubmit } = useWeb3Forms({
     access_key: apiKey,
@@ -36,13 +37,13 @@ export default function ContactUsForm() {
 
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)} className="my-10">
+      <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-5">
           <input
             type="text"
             placeholder="Full Name"
             autoComplete="false"
-            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
+            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4  ${
               errors.name
                 ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
                 : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0 font-neues text-brand-blue"
@@ -69,7 +70,7 @@ export default function ContactUsForm() {
             placeholder="Email Address"
             name="email"
             autoComplete="false"
-            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4 font-neues text-brand-blue  ${
+            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 font-neues text-brand-blue  ${
               errors.email
                 ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
                 : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
@@ -92,7 +93,7 @@ export default function ContactUsForm() {
           <textarea
             name="message"
             placeholder="Your Message"
-            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900   rounded-md outline-none  h-36 focus:ring-4  ${
+            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none  h-36 focus:ring-4  ${
               errors.message
                 ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
                 : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0 font-neues text-brand-blue"
@@ -108,10 +109,24 @@ export default function ContactUsForm() {
             </div>
           )}
         </div>
+        <div>
+          <input
+            type="checkbox"
+            id=""
+            className="hidden"
+            style={{ display: "none" }}
+            {...register("botcheck")}
+          ></input>
+        </div>
+        <input
+          type="hidden"
+          name="redirect"
+          value="https://localhost:5173/thankyou"
+        ></input>
 
         <button
           type="submit"
-          className="w-full py-4 font-semibold text-white transition-colors bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 dark:bg-white dark:text-black font-neues"
+          className="w-full py-4 font-semibold text-white transition-colors bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 font-neues"
         >
           {isSubmitting ? (
             <svg

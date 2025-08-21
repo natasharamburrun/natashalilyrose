@@ -1,4 +1,5 @@
 import image from "../assets/images/AdobeStock_image2.jpeg";
+import Footer from "../Pages/Footer";
 
 function HomePage() {
   const styles = {
@@ -13,7 +14,7 @@ function HomePage() {
     <div>
       <div className="h-screen w-screen opacity-70" style={styles}>
         <div className="h-full w-full flex flex-col px-[4rem] md:px-[6rem] justify-center">
-          <h3 className="font-neue font-medium flex flex-row justify-left text-blue-950 pb-8 text-nowrap text-xl lg:text-3xl">
+          <h3 className="font-harlow font-medium flex flex-row justify-left text-blue-950 pb-8 text-nowrap text-xl lg:text-3xl">
             Shop The Collection
           </h3>
           <a
@@ -39,6 +40,7 @@ function HomePage() {
           ABOUT
         </a>
       </div>
+      <Footer />
     </div>
   );
 }
