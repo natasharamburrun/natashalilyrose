@@ -22,7 +22,7 @@ export default function ContactUsForm() {
     access_key: apiKey,
     settings: {
       from_name: "Natasha lily rose",
-      subject: "New message for Natasha lily rose",
+      subject: "I have signed up to your email address!",
     },
     onSuccess: (msg, data) => {
       setIsSuccess(true);
@@ -39,24 +39,6 @@ export default function ContactUsForm() {
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-5">
-          <input
-            type="text"
-            placeholder="Name"
-            autoComplete="false"
-            className={`w-full px-4 py-3 border-2 text-brand-blue-900 rounded-md outline-none focus:ring-4 font-neues`}
-            // {...register("name", {
-            //   required: "Full name is required",
-            //   maxLength: 80,
-            // })}
-          />
-          {/* {errors.name && (
-            <div className="mt-1 text-red-600 font-neues">
-              <small>{errors.name.message}</small>
-            </div>
-          )} */}
-        </div>
-
-        <div className="mb-5">
           <label htmlFor="email_address" className="sr-only">
             Email Address
           </label>
@@ -66,7 +48,7 @@ export default function ContactUsForm() {
             placeholder="Email Address"
             name="email"
             autoComplete="false"
-            className={`w-full px-4 py-3 border-2 text-brand-blue-900 rounded-md outline-none focus:ring-4 font-neues ${
+            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 font-neues text-brand-blue  ${
               errors.email
                 ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
                 : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
@@ -85,28 +67,6 @@ export default function ContactUsForm() {
             </div>
           )}
         </div>
-        <div className="mb-3">
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            className={`w-full px-4 py-3 border-2 text-brand-blue-900 rounded-md outline-none  h-36 focus:ring-4 font-neues`}
-            // {...register("message", {
-            //   required: "Enter your Message",
-            // })}
-          />
-          {/* {errors.message && (
-            <div className="mt-1 text-red-600 font-neues">
-              {" "}
-              <small>{errors.message.message}</small>
-            </div>
-          )} */}
-        </div>
-        <input
-          type="hidden"
-          name="redirect"
-          value="https://localhost:5173/thankyou"
-        ></input>
-
         <button
           type="submit"
           className="font-neues w-full py-4 font-semibold text-white transition-colors bg-brand-blue rounded-md hover:bg-gray-800 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 font-neues"
@@ -133,7 +93,7 @@ export default function ContactUsForm() {
               ></path>
             </svg>
           ) : (
-            "Send Message"
+            "Sign me up"
           )}
         </button>
       </form>

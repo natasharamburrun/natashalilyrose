@@ -13,7 +13,7 @@ function HomePage() {
   return (
     <div>
       <div className="h-screen w-screen opacity-70" style={styles}>
-        <div className="h-full w-full flex flex-col px-[4rem] md:px-[6rem] justify-center">
+        <div className="h-full w-full flex flex-col px-[4rem] md:px-[6rem] justify-center max-w-6xl mx-auto p-4 md:p-16 xl:p-20">
           <h3 className="font-harlow font-medium flex flex-row justify-left text-blue-950 pb-8 text-nowrap text-xl lg:text-3xl">
             Shop The Collection
           </h3>

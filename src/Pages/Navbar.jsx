@@ -5,16 +5,13 @@ import logo from "../assets/images/branding/logo-small-final-packaging_Blue.png"
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
-  // const openMenu = () => {
-  //   setNavbarOpen(!navbarOpen);
-  // };
   return (
     <div className="sticky top-0 flex-no-wrap z-10 bg-primary">
-      <div className="p-4 justify-items-between-items-center items-center">
+      <div className="p-4 md:p-12 justify-items-between-items-center items-center">
         <Link to="/">
           <img
             src={logo}
-            className="hidden md:flex justify-self-center w-16 h-15"
+            className="hidden md:flex justify-self-center w-22 h-24"
             alt="logo"
           />
           <h1 className="font-harlow font-bold text-brand-blue leading-3 text-center m-7 text-2xl md:text-3xl lg:text-4xl text-wrap-mode: nowrap;">

@@ -1,6 +1,7 @@
 //rafce
 
 import React from "react";
+import NewsletterForm from "./NewsletterForm";
 
 const Footer = () => {
   return (
@@ -11,24 +12,24 @@ const Footer = () => {
             Socials
           </h3>
         </div>
-
         <div>
           <h3 className="text-md font-bold font-harlow text-brand-blue">
             Customer care
           </h3>
         </div>
         <div>
-          <h3 className="text-md font-bold font-harlow text-brand-blue">
+          <h3 className="py-2 text-md font-bold font-harlow text-brand-blue">
             Sign up to Newsletter
           </h3>
-          <p className="text-md font-light font-harlow text-brand-blue">
+          <p className="py-2 text-md font-light font-neues text-brand-blue">
             Join to know about new collection, launches, special offers and
             updates
           </p>
-          <p className="text-xs font-light font-harlow text-brand-blue">
+          <p className="py-1 text-xs font-light font-neues text-brand-blue">
             By signing up, you agree to receive marketing emails. View our
             privacy policy and terms of service for more info.
           </p>
+          <NewsletterForm />
         </div>
       </div>
     </footer>
