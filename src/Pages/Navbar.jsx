@@ -6,20 +6,15 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 flex-no-wrap z-10 bg-primary">
-      <div className="p-4 md:p-12 justify-items-between-items-center items-center">
+    <div className="sticky top-0 flex-no-wrap z-10 bg-primary md:flex md:flex-start">
+      <div className="p-4 md:p-12 justify-items-between-items-center items-center ">
         <Link to="/">
-          <img
-            src={logo}
-            className="hidden md:flex justify-self-center w-22 h-24"
-            alt="logo"
-          />
-          <h1 className="font-harlow font-bold text-brand-blue leading-3 text-center m-7 text-2xl md:text-3xl lg:text-4xl text-wrap-mode: nowrap;">
+          <h1 className="font-harlow font-bold text-brand-blue leading-3 text-center m-7 md:pb-8 md:m-auto text-2xl md:text-3xl lg:text-4xl text-wrap-mode: nowrap;">
             NATASHA LILY ROSE
           </h1>
         </Link>
         <div className="">
-          <ul className="font-neues text-lg tracking-wider text-brand-blue hidden md:flex flex-row justify-center items-center text-center gap-12">
+          <ul className="font-neues text-lg tracking-wider text-brand-blue hidden md:flex flex-row justify-start items-center text-center gap-12">
             <li className="list-none text-center curser-pointer hover:text-brand-brown">
               <Link to="/shop">Shop</Link>
             </li>

@@ -28,9 +28,13 @@ function HomePage() {
       </div>
       <div className="h-screen w-screen bg-primary flex flex-col px-[4rem] justify-center">
         <p className="font-neues text-lg leading-8 md:text-4xl tracking-wide font-semibold text-blue-950 text-center content-center mb-1 py-[2rem] lg:p-16">
-          Natasha Lily Rose creates timeless, classic, handmade jewellery that
-          carries sentimental value and can be passed down through generations
-          as cherished heirlooms.
+          Natasha Lily Rose is a handmade jewellery brand dedicated to creating
+          timeless pieces in sterling silver, gold, and precious gemstones.
+          Every design blends elegance and sentiment, crafted with care to
+          become meaningful treasures that can be worn daily and one day passed
+          down through generations. With an eye for detail and a love for
+          storytelling through jewellery, Natasha creates heirloom-quality
+          pieces that celebrate life’s moments and empower those who wear them.
         </p>
         <a
           href="/about"

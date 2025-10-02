@@ -27,26 +27,29 @@ const AboutPage = () => {
             2025.
           </h2>
         </div>
-        <div className="p-8">
+        <div className="p-8 content-center">
           <p className="font-neues font-light text-brand-blue text-sm lg:text-lg xl:text-2xl text-center mb-4">
-            From my home studio in Hertfordshire, I make Jewellery inspired by
-            luxury creating a timeless, elegant, and sentimental collection
-            which can be worn everyday or treasured for special occasions.
+            From her home studio in Hertfordshire, Natasha, the founder of
+            Natasha Lily Rose, creates jewellery inspired by luxury, a timeless,
+            elegant, and sentimental collection designed to be worn every day or
+            treasured for special occasions.
           </p>
           <p className="font-neues font-light text-brand-blue text-sm lg:text-lg xl:text-2xl text-center mb-4">
-            My journey began in 2023, where I bought some essential tools and
-            enrolled in online courses to learn the basics of jewellery making.
-            After being made redundant from my role as a web developer, I
-            decided to shift my focus towards a career change. This led me to
-            train with Jewellers Academy, where I completed a diploma in silver
-            jewellery. I’m now continuing to build on those foundations by
-            learning more advanced techniques and refining my craft.
+            Natasha’s journey into jewellery making began in 2023, when she
+            purchased her first tools and enrolled in online courses to learn
+            the fundamentals. After being made redundant from her role as a web
+            developer, she embraced the opportunity for a career change and
+            pursued her passion full-time. This led her to train with Jewellers
+            Academy, where she completed a diploma in silver jewellery. She
+            continues to refine her skills, exploring advanced techniques and
+            expanding her craft.
           </p>
           <p className="font-neues font-light text-brand-blue text-sm lg:text-lg xl:text-2xl text-center tracking-wide">
-            Alongside making jewellery, I’m a proud mum to two girls, Ava and
-            Sofia, who are my greatest inspiration. The name Natasha Lily Rose
-            is a blend of my first name and their middle names, symbolising the
-            heart behind everything I create.
+            Alongside building her jewellery business, Natasha is a proud mum to
+            two girls, Ava and Sofia, who remain her greatest inspiration. The
+            brand name, Natasha Lily Rose, is a blend of her first name and her
+            daughters’ middle names, a heartfelt symbol of the love and meaning
+            behind every piece she creates.
           </p>
         </div>
       </div>
@@ -66,7 +69,7 @@ const AboutPage = () => {
             <i class="bx  bx-recycle flex justify-center p-4"></i>
             <p className="font-neues font-light text-brand-blue text-sm lg:text-lg xl:text-2xl text-center mb-4 tracking-wide">
               <span className="font-black text-lg">Sustainable</span> <br />
-              Made using recycled metals, ethically sourced gemstones from
+              Made using 100% recycled metals, ethically sourced gemstones from
               reputable suppliers, and eco-friendly packaging.
             </p>
             <i class="bx  bx-diamond-alt flex justify-center p-4"></i>
