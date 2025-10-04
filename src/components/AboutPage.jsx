@@ -1,5 +1,5 @@
 import React from "react";
-import aboutme from "../assets/images/Brand-photography/aboutme.jpg";
+import aboutme from "../assets/images/Brand-photography/aboutme2.jpg";
 import aboutpagehero from "../assets/images/Brand-photography/aboutpageherob-w.jpg";
 import aboutmedesign from "../assets/images/Brand-photography/polishing-colour.jpg";
 
@@ -13,9 +13,9 @@ const AboutPage = () => {
         />
       </div>
       <div className="justify-center bg-primary md:grid md:grid-cols-2 md:gap-4 md-p-5">
-        <div className="p-8 lg:px-8 xl:m-auto">
+        <div className=" p-8 lg:px-8 xl:m-auto">
           <img
-            className="p-8 object-center"
+            className="p-8 object-center w-full max-w-90"
             src={aboutme}
             alt="A photo of the business owner from her work bench"
           />
@@ -60,7 +60,7 @@ const AboutPage = () => {
             <h2 className="font-neues font-black text-brand-blue text-lg md:text-lg lg:text-xl xl:text-2xl text-nowrap text-center p-8">
               Natasha Lily Rose brand ethos
             </h2>
-            <i class="bx  bx-home-heart flex justify-center p-4"></i>
+            <i className="bx  bx-home-heart flex justify-center p-4"></i>
             <p className="font-neues font-light text-brand-blue text-sm lg:text-lg xl:text-2xl text-center mb-4 tracking-wide">
               <span className="font-black text-lg">Handmade in the UK</span>
               <br />
