@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'harlow': ['harlow', 'sans-serif'], // Add 'sans-serif' as a fallback
-        'neues': ['neues', 'sans-serif']
+        'neues': ['neues', 'sans-serif'],
+        'margo': ['margo', 'sans-script'],
       },
          colors: {
           'brand-nude': '#f7e6dd;',
@@ -20,8 +21,9 @@ module.exports = {
       },
         backgroundColor: theme => ({
           ...theme('colors'),
-          'primary': '#f4f2f2',
-          'secondary': '#917171',  
+          'primary': '#f5f3f1',
+          'secondary': '#917171', 
+          'tertiary':'#e9e3e0'
         }),
     },
   

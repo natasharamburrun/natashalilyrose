@@ -15,4 +15,9 @@
     font-weight: 500;
     src: url(/src/assets/fonts/NeueSwiss-Regular.woff) format("woff");
   }
+  @font-face {
+    font-family: margo;
+    font-weight: 500;
+    src: url(/src/assets/fonts/MargoScript-Regular.woff) format("woff");
+  }
 }

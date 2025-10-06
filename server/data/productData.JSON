@@ -1,30 +1,37 @@
 [
   {
     "id": 1,
-    "productName": "Silver heart necklace",
-    "productDescription": "Made out of sterling silver",
-    "price": 795.0,
-    "image": "https://natashalilyrosestorage.s3.eu-west-2.amazonaws.com/AdobeStock_1107273104_Preview.jpeg"
+    "productName": "9ct Gold Chain",
+    "productDescription": "Paperclip chain",
+    "price": 1095.0,
+    "image": "https://natashalilyrosestorage.s3.eu-west-2.amazonaws.com/productimage-bluelondontopazsilver.jpg"
   },
   {
     "id": 2,
-    "productName": "9ct Gold Chain",
-    "productDescription": "Papercip chain",
-    "price": 1095.0,
-    "image": "https://natashalilyrosestorage.s3.eu-west-2.amazonaws.com/AdobeStock_1192322329_Preview.jpeg"
-  },
-  {
-    "id": 3,
     "productName": "9ct gold nugget earings",
     "productDescription": "yellow gold",
     "price": 789.0,
-    "image": "https://natashalilyrosestorage.s3.eu-west-2.amazonaws.com/AdobeStock_124126611_Preview.jpeg"
+    "image": "https://natashalilyrosestorage.s3.eu-west-2.amazonaws.com/ProductImage-SilverAmatystcollet.jpg"
+  },
+  {
+    "id": 3,
+    "productName": "sterling silver ring",
+    "productDescription": "bubbling ring",
+    "price": 295.0,
+    "image": "https://natashalilyrosestorage.s3.eu-west-2.amazonaws.com/ProductImageTopazSilvering.jpg"
   },
   {
     "id": 4,
     "productName": "sterling silver ring",
     "productDescription": "bubbling ring",
     "price": 295.0,
-    "image": "https://natashalilyrosestorage.s3.eu-west-2.amazonaws.com/AdobeStock_1298493201_Preview.jpeg"
+    "image": "https://natashalilyrosestorage.s3.eu-west-2.amazonaws.com/fancychain.jpg"
+  },
+  {
+    "id": 5,
+    "productName": "sterling silver ring",
+    "productDescription": "bubbling ring",
+    "price": 295.0,
+    "image": "https://natashalilyrosestorage.s3.eu-west-2.amazonaws.com/paperclipchain.jpg"
   }
 ]
