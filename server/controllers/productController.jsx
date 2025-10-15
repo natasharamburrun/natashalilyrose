@@ -12,4 +12,19 @@ const returnAllProducts = async (req, res) => {
   }
 };
 
-module.exports = returnAllProducts;
+//return data for product
+const returnProduct = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const selectOneProduct = await ProductModel.findOne({ _id: id });
+    if (selectOneProduct) {
+      res.json(selectOneProduct);
+    } else {
+      res.status(404).json({ message: "product doesn't exist" });
+    }
+  } catch (error) {
+    console.log("error is", error.message);
+  }
+};
+module.exports = { returnAllProducts, returnProduct };

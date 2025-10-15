@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export function ItemCard({ product }) {
   return (
     <div className="justify-center m-10 p-3 max-w-sm bg-white">
-      <Link to={`/shop/${product._id}`} className="">
+      <Link to={`/product/${product._id}`} className="">
         <img
           className="h-sm w-sm md:max-h-xl md:w-xl flex justify-self-center"
           src={product.image}
