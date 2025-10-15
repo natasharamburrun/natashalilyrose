@@ -14,20 +14,9 @@ export async function getProducts() {
   }
 }
 
-// export async function getProduct(id) {
-  
-//   const response = await axios.get(`${URL}/api/products/${id}`)
-//   if (response.status === 200) {
-//     return response.data
-//   } else {
-//       return
-//   }
-// }
-
 export async function getProduct (id) {
   try {
     const response = await axios.get(`${URL}/api/products/${id}`)
-    console.log('Fetching data...', response.data);
     return response.data;
   } catch (error) {
     console.error('Error fetching data:', error);

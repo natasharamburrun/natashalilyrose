@@ -1,5 +1,5 @@
 import React from "react";
-import aboutme from "../assets/images/Brand-photography/aboutme2.jpg";
+import aboutme from "../assets/images/Brand-photography/AboutMeProfilePic.jpg";
 import aboutmedesign from "../assets/images/Brand-photography/polishing-colour.jpg";
 // import aboutpagehero from "../assets/images/Brand-photography/aboutpageherob-w.jpg";
 
