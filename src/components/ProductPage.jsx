@@ -1,18 +1,22 @@
-import { getProduct } from "../api";
-import { useState, useEffect } from "react";
+// import { getProduct } from "../api";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { fetchItemById } from "../Features/SingleProductSlice";
+import { useSelector, useDispatch } from "react-redux";
 
 function ProductPage() {
   const { id } = useParams();
-  const [product, setProduct] = useState([]);
+  console.log("Product ID from URL:", id);
+  const dispatch = useDispatch();
+  useSelector((state) => console.log(state));
+  const { item: product } = useSelector((state) => state.singleProduct);
+  console.log("Product details from Redux store:", product);
 
   useEffect(() => {
-    async function fetchProduct() {
-      const data = await getProduct(id);
-      setProduct(data);
+    if (id && id !== product.id) {
+      dispatch(fetchItemById(id));
     }
-    fetchProduct();
-  }, [id]);
+  }, [id, product.id, dispatch]);
 
   return (
     <div>

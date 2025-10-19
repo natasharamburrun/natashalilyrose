@@ -1,17 +1,27 @@
-import { useState, useEffect } from "react";
-import { getProducts } from "../api";
+import { useEffect } from "react";
+// import { getProducts } from "../api";
 import { ItemCard } from "../components/ItemCard";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchProducts } from "../Features/ProductsSlice";
 
 function ShopPage() {
-  const [products, setProducts] = useState([]);
+  const { items: products, status } = useSelector((state) => state.products);
+
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    async function loadAllStock() {
-      const data = await getProducts();
-      setProducts(data);
+    if (status === "idle") {
+      dispatch(fetchProducts());
     }
-    loadAllStock();
-  }, []);
+  }, [status, dispatch]);
+
+  if (status === "loading") {
+    return <div>Loading...</div>;
+  }
+
+  if (status === "failed") {
+    return <div>Error loading products.</div>;
+  }
 
   return (
     <div className="shop-content">
