@@ -8,7 +8,6 @@ import { addToCart } from "../Features/cartSlice";
 function ProductPage() {
   const { id } = useParams();
   const dispatch = useDispatch();
-  useSelector((state) => console.log(state));
   const { item: product } = useSelector((state) => state.singleProduct);
 
   useEffect(() => {
