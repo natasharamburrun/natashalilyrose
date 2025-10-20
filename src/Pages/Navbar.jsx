@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/images/branding/logo-small-final-packaging_Blue.png";
-
+// import logo from "../assets/images/branding/logo-small-final-packaging_Blue.png";
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -45,6 +44,13 @@ const Navbar = () => {
               <Link to="/contact">Contact</Link>
             </li>
           </div>
+        </div>
+      </div>
+      <div>
+        <div className="Shopping-cart">
+          <Link to="/cart">
+            <i className="bx  bx-shopping-bag"></i>
+          </Link>
         </div>
       </div>
     </div>

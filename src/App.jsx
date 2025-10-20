@@ -5,6 +5,7 @@ import ShopPage from "./components/ShopPage";
 import ProductPage from "./components/ProductPage";
 import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
+import Cart from "./components/Cart";
 
 import "./index.css";
 
@@ -18,6 +19,8 @@ function App() {
         <Route path="/Product/:id" element={<ProductPage />} />
         <Route path="/About" element={<AboutPage />} />
         <Route path="/Contact" element={<ContactPage />} />
+        <Route path="/Cart" element={<Cart />} />
+        <Route path="*" element={<HomePage />} />
       </Routes>
     </ReactRouter>
   );

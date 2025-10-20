@@ -29,9 +29,21 @@ const cartSlice = createSlice({
         0
       );
     },
+    removeFromCart(state, action) {
+      state.items = state.items.filter((item) => item._id !== action.payload);
+      state.tempItems = [...state.items];
+      // state.totalPrice = state.items.reduce(
+      //   (total, item) => total + item.price * (item.quantity || 1),
+      //   0
+      // )
+      // state.totalQuantity = state.items.reduce(
+      //   (total, item) => total + (item.quantity || 1),
+      //   0
+      // );
+    },
   },
 });
 
-export const { addToCart } = cartSlice.actions;
+export const { addToCart, removeFromCart } = cartSlice.actions;
 
 export default cartSlice.reducer;
