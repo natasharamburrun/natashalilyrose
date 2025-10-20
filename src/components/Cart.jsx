@@ -7,7 +7,6 @@ function Cart() {
     tempItems,
     totalPrice,
   } = useSelector((state) => state.cart);
-  console.log("Cart Items:", cartItems, tempItems, totalPrice);
   const dispatch = useDispatch();
 
   const handleRemoveItem = (_id) => {
@@ -21,12 +20,10 @@ function Cart() {
     });
   };
 
-  const handleApplyUpdates = () => {
-    tempItems.forEach((item) => {
-      dispatch({
-        type: "cart/applyTempUpdates",
-        payload: { _id: item._id },
-      });
+  const handleApplyUpdates = (_id) => {
+    dispatch({
+      type: "cart/applyTempUpdates",
+      payload: { _id },
     });
   };
 
@@ -62,7 +59,7 @@ function Cart() {
                   }
                 />
                 <button
-                  onClick={handleApplyUpdates}
+                  onClick={() => handleApplyUpdates(item._id)}
                   className="update-quantity-button"
                 >
                   Update

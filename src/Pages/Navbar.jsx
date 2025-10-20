@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 // import logo from "../assets/images/branding/logo-small-final-packaging_Blue.png";
 const Navbar = () => {
+  const cartItems = useSelector((state) => state.cart.items);
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
@@ -49,7 +51,7 @@ const Navbar = () => {
       <div>
         <div className="Shopping-cart">
           <Link to="/cart">
-            <i className="bx  bx-shopping-bag"></i>
+            ({cartItems.length})<i className="bx  bx-shopping-bag"></i>
           </Link>
         </div>
       </div>
