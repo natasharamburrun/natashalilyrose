@@ -6,17 +6,23 @@ import { useSelector, useDispatch } from "react-redux";
 
 function ProductPage() {
   const { id } = useParams();
-  console.log("Product ID from URL:", id);
   const dispatch = useDispatch();
   useSelector((state) => console.log(state));
-  const { item: product } = useSelector((state) => state.singleProduct);
-  console.log("Product details from Redux store:", product);
+  const { item: product, status } = useSelector((state) => state.singleProduct);
 
   useEffect(() => {
-    if (id && id !== product.id) {
+    if (status === "idle" && id && id !== product.id) {
       dispatch(fetchItemById(id));
     }
-  }, [id, product.id, dispatch]);
+  }, [id, product.id, dispatch, status]);
+
+  if (status === "loading") {
+    return <div>Loading...</div>;
+  }
+
+  if (status === "failed") {
+    return <div>Error loading products.</div>;
+  }
 
   return (
     <div>
