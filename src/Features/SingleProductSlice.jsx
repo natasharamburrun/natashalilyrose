@@ -21,21 +21,11 @@ const singleProductSlice = createSlice({
     error: null,
   },
   extraReducers: (builder) => {
-    builder
-      .addCase(fetchItemById.pending, (state) => {
-        state.status = "loading";
-        state.loading = true;
-      })
-      .addCase(fetchItemById.fulfilled, (state, action) => {
-        state.status = "succeeded";
-        state.item = action.payload;
-        state.loading = false;
-      })
-      .addCase(fetchItemById.rejected, (state, action) => {
-        state.status = "failed";
-        state.error = action.error.message;
-        state.loading = false;
-      });
+    builder.addCase(fetchItemById.fulfilled, (state, action) => {
+      state.status = "succeeded";
+      state.item = action.payload;
+      state.loading = false;
+    });
   },
 });
 
