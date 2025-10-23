@@ -18,20 +18,35 @@ function ProductPage() {
 
   return (
     <div>
-      <div className="shop-content">
+      <div className="w-screen h-screen bg-primary">
         <div className="bg-primary p-3 md:grid md:grid-cols-2 md:gap-4 md-p-5 lg:grid-cols-2">
           <div>
             <img src={product.image} alt={`Image of ${product.productName}`} />
           </div>
           <div>
-            <h2 className="font-neues font-bold text-brand-blue leading-3 text-1xl md:text-2xl">
+            <h2 className="font-neues font-bold text-brand-blue text-2xl md:text-2xl tracking-wider mb-6">
               {product.productName}
             </h2>
-            <p className="font-neues font-bold text-brand-blue leading-3 text-md">
+            <p className="font-neues text-brand-blue text-md mb-12">
+              <span className="font-bold text-lg">Description</span>
+              <br></br>
               {product.productDescription}
             </p>
-            <p className="font-neues font-light text-brand-blue leading-3 text-3xl my-3">
+            <p className="font-neues font-light text-brand-blue text-1xl my-3">
               £{product.price}
+            </p>
+            <p className="font-neues font-light text-brand-blue text-1xl my-3"></p>
+            {product.size && (
+              <p className="font-neues font-light text-brand-blue text-1xl my-3">
+                <span className="font-bold text-lg">Size</span>
+                <br></br>
+                {product.size}
+              </p>
+            )}
+            <p className="font-neues font-light text-brand-blue text-1xl my-3">
+              <span className="font-bold text-lg">Availability</span>
+              <br></br>
+              In Stock ready to ship
             </p>
             <button
               className="font-neues flex flex-row justify-center self-center text-white text-center w-24 bg-blue-950 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 text-nowrap"

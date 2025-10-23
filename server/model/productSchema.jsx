@@ -11,6 +11,9 @@ const productSchema = mongoose.Schema({
     type: String,
     required: "This field is required",
   },
+  size: {
+    type: String,
+  },
   price: {
     type: String,
     required: "This field is required",

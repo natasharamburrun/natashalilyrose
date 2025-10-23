@@ -48,13 +48,6 @@ const AboutPage = () => {
             behind every piece she creates.
           </p>
         </div>
-        {/* <div className="flex items-start lg:items-center">
-          <img
-            className="p-8 object-center"
-            src={aboutpagehero}
-            alt="A photo of the business owner working in her studio"
-          />
-        </div> */}
       </div>
       <div className="justify-center bg-primary md:grid md:grid-cols-2 md:gap-4 md-p-5">
         <div>
