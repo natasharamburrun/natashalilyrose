@@ -15,8 +15,8 @@ export function ItemCard({ product }) {
           <p className="font-neues font-bold text-brand-blue leading-3 text-md">
             {product.productDescription}
           </p>
-          <h3 className="font-neues font-light text-brand-blue leading-3 text-3xl my-3">
-            {product.price}
+          <h3 className="font-neues font-light text-brand-blue leading-3 text-1xl my-3">
+            £{product.price}
           </h3>
         </section>
       </Link>

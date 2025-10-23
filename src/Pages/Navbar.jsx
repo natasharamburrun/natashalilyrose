@@ -49,11 +49,11 @@ const Navbar = () => {
         </div>
       </div>
       <div>
-        <div className="absolute top-9 right-4 text-md md:text-lg md:top-12 md:right-12 text-brand-blue">
+        <div className="absolute top-9 right-4 text-sm md:text-md md:top-12 md:right-12 text-brand-blue">
           <Link to="/cart">
-            <div className="flex items-center gap-1 font-neues font-bold">
+            <div className="flex items-center font-neues font-bold">
               <i className="bx  bx-shopping-bag"></i>
-              <div className="">{cartItems.length}</div>
+              <div className="">({cartItems.length})</div>
             </div>
           </Link>
         </div>
