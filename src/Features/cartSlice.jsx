@@ -19,6 +19,7 @@ const cartSlice = createSlice({
       } else {
         state.items.push({ ...(action && action.payload), quantity: 1 });
       }
+
       state.tempItems = [...state.items];
       state.totalPrice = state.items.reduce(
         (total, item) => total + item.price * (item.quantity || 1),
@@ -29,6 +30,7 @@ const cartSlice = createSlice({
         0
       );
     },
+
     updateTempItemQuantity(state, action) {
       const tempItem = state.tempItems.find(
         (item) => item._id === action.payload._id
