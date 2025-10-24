@@ -21,9 +21,13 @@ function ProductPage() {
       <div className="w-screen h-screen bg-primary">
         <div className="bg-primary p-3 md:grid md:grid-cols-2 md:gap-4 md-p-8 lg:grid-cols-2">
           <div>
-            <img src={product.image} alt={`Image of ${product.productName}`} />
+            <img
+              className="w-80 flex justify-self-center"
+              src={product.image}
+              alt={`Image of ${product.productName}`}
+            />
           </div>
-          <div>
+          <div className="p-8 md:p-1">
             <h2 className="font-neues font-bold text-brand-blue text-2xl md:text-2xl tracking-wider mb-6">
               {product.productName}
             </h2>

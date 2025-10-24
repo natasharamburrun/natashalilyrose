@@ -33,8 +33,8 @@ function Cart() {
         Shopping Cart
       </h2>
       {cartItems.length === 0 ? (
-        <div className="font-harlow text-brand-blue text-xl text-nowrap text-center pb-4">
-          <h2 className="cart-empty-message">Your cart is currently empty.</h2>
+        <div className="font-neues text-brand-blue text-xl text-nowrap text-center pb-4">
+          <h2 className="p-4">Your cart is currently empty.</h2>
           <Link
             to="/shop"
             className="font-neues flex flex-row justify-center self-center text-white text-center  bg-blue-950 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 text-nowrap justify-self-center w-60 md:w-96 mb-4"
@@ -115,7 +115,7 @@ function Cart() {
                       <tr className="border-b border-gray-300 font-neues">
                         <td className="w-32 p-4">
                           <img
-                            className="justify-items-center p-12 md:p-0 md:h-32 md:w-32 object-center"
+                            className="justify-self-center p-12 md:p-0 md:w-32 object-center"
                             src={item.image}
                             alt="Product"
                           />
