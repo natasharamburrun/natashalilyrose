@@ -19,7 +19,7 @@ function ProductPage() {
   return (
     <div>
       <div className="w-screen h-screen bg-primary">
-        <div className="bg-primary p-3 md:grid md:grid-cols-2 md:gap-4 md-p-5 lg:grid-cols-2">
+        <div className="bg-primary p-3 md:grid md:grid-cols-2 md:gap-4 md-p-8 lg:grid-cols-2">
           <div>
             <img src={product.image} alt={`Image of ${product.productName}`} />
           </div>
@@ -28,23 +28,18 @@ function ProductPage() {
               {product.productName}
             </h2>
             <p className="font-neues text-brand-blue text-md mb-12">
-              <span className="font-bold text-lg">Description</span>
+              <span className="font-bold text-lg">Description:</span>
               <br></br>
               {product.productDescription}
             </p>
             <p className="font-neues font-light text-brand-blue text-1xl my-3">
               £{product.price}
             </p>
-            <p className="font-neues font-light text-brand-blue text-1xl my-3"></p>
-            {product.size && (
-              <p className="font-neues font-light text-brand-blue text-1xl my-3">
-                <span className="font-bold text-lg">Size</span>
-                <br></br>
-                {product.size}
-              </p>
-            )}
             <p className="font-neues font-light text-brand-blue text-1xl my-3">
-              <span className="font-bold text-lg">Availability</span>
+              Size: {product.size}
+            </p>
+            <p className="font-neues font-light text-brand-blue text-1xl my-3">
+              <span className="font-bold text-lg">Availability:</span>
               <br></br>
               In Stock ready to ship
             </p>
