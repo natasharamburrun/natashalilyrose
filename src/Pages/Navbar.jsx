@@ -7,10 +7,10 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 flex-no-wrap z-10 bg-primary md:flex md:flex-start">
-      <div className="p-4 md:p-12 justify-items-between-items-center items-center ">
+    <div className="sticky top-10 md:top-12 z-10 w-full flex-no-wrap bg-primary md:flex md:flex-start">
+      <div className="p-4 md:p-8 justify-items-between-items-center items-center ">
         <Link to="/">
-          <h1 className="font-harlow font-bold text-brand-blue leading-3 text-center m-7 md:pb-8 md:m-auto text-2xl md:text-3xl lg:text-4xl text-wrap-mode: nowrap;">
+          <h1 className="font-harlow font-bold text-brand-blue leading-3 text-center m-7 md:pb-6 md:m-auto text-2xl md:text-3xl lg:text-4xl text-wrap-mode: nowrap;">
             NATASHA LILY ROSE
           </h1>
         </Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
         </div>
       </div>
       <div>
-        <div className="absolute top-9 right-4 text-md md:text-lg md:top-12 md:right-12 text-brand-blue">
+        <div className="absolute top-9 right-4 text-md md:text-lg md:top-12 md:right-12 text-brand-blue tracking-wide md:tracking-widest">
           <Link to="/cart">
             <div className="flex items-center font-neues font-bold">
               <i className="bx  bx-shopping-bag"></i>

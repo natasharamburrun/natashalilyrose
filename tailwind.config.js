@@ -12,13 +12,15 @@ module.exports = {
       },
          colors: {
           'brand-nude': '#f7e6dd;',
-          'brand-black': '#434f59;',
+          'brand-black': '#45494c;',
           'brand-white': '#e2d8d7;',
           'brand-blue': '#323b5d;',
           'brand-pinky': '#edded7;',
           'brand-beige': '#f0ebe8;',
           'brand-brown': '#917171;',
-          'brand-button-blue': '#112c4f'
+          'brand-button-blue': '#112c4f',
+          'brand-button-hover-grey':'#b1b0ac',
+          'brand-green-blue': '#49646a',
       },
         backgroundColor: theme => ({
           ...theme('colors'),

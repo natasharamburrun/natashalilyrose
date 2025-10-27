@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <div>
       <div className="w-screen bg-primary">
-        <div className="flex flex-col md:flex-row justify-self-center lg:justify-center pb-6 md:pb-8 items-center md:items-start">
+        <div className="flex flex-col md:flex-row justify-self-center lg:justify-center pb-6 md:pb-4 items-center md:items-start">
           <h3 className="font-harlow font-medium flex flex-row justify-center text-blue-950  text-nowrap text-xl md:text-5xl md:pr-8">
             <span className="font-margo text-xxl font-light pr-3 md:pr-5 pt-0.5 md:pt-1">
               Shop
@@ -16,7 +16,7 @@ function HomePage() {
           </h3>
           <a
             href="/shop"
-            className="flex flex-row relative top-1 justify-center h-fit self-left text-white text-center w-24 bg-blue-950 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue focus:outline-none dark:focus:ring-blue-800 font-neues "
+            className="flex flex-row relative top-1 justify-center h-fit self-left text-white text-center w-24 font-neues flex flex-row justify-center self-center bg-brand-black hover:bg-brand-button-hover-grey focus:ring-4 focus:ring-brand-black-300 font-medium rounded-lg text-sm px-5 py-3 dark:bg-brand-black-600 dark:hover:bg-brand-button-hover-grey-700 focus:outline-none dark:focus:ring-brand-black-800 text-nowrap"
             alt="call to action button to take you to the shop page"
           >
             SHOP
@@ -45,7 +45,7 @@ function HomePage() {
             />
           </div>
         </div>
-        <div className="flex flex-col justify-center p-12 md:p-8">
+        <div className="flex flex-col justify-center p-12 md:p-6">
           <p
             className=" font-harlow
             font-medium
@@ -54,7 +54,7 @@ function HomePage() {
             justify-left
             text-blue-950
             text-xl
-            lg:text-3xl"
+            lg:text-2xl"
           >
             Welcome to Natasha Lily Rose
           </p>
@@ -84,7 +84,7 @@ function HomePage() {
         </p>
         <a
           href="/about"
-          className="font-neues flex flex-row justify-center self-center text-white text-center w-24 bg-blue-950 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 text-nowrap"
+          className="font-neues flex flex-row justify-center self-center text-white text-center w-24 bg-brand-black hover:bg-brand-button-hover-grey focus:ring-4 focus:ring-brand-black-300 font-medium rounded-lg text-sm px-5 py-3 dark:bg-brand-black-600 dark:hover:bg-brand-button-hover-grey-700 focus:outline-none dark:focus:ring-brand-black-800 text-nowrap"
           alt="call to action button to take you to the about page"
         >
           ABOUT

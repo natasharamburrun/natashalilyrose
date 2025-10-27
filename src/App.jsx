@@ -8,12 +8,14 @@ import ContactPage from "./components/ContactPage";
 import Cart from "./components/Cart";
 import PaymentCancel from "./Pages/PaymentCancel";
 import PaymentSuccess from "./Pages/PaymentSuccess";
+import AnnouncementBanner from "./Pages/AnnouncementBanner";
 
 import "./index.css";
 
 function App() {
   return (
     <ReactRouter>
+      <AnnouncementBanner />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
