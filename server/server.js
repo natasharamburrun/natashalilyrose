@@ -47,6 +47,16 @@ app.post('/create-checkout-session', async (req, res) => {
       line_items,
       success_url: `${req.headers.origin}/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${req.headers.origin}/cart`,
+      name_collection: {
+        individual: {
+          enabled: true,
+          optional: false,
+        },
+      },
+      billing_address_collection: 'required',
+      shipping_address_collection: {
+      allowed_countries: ['GB'],  
+      },
     });
 
     res.json({ url: session.url });
@@ -55,7 +65,6 @@ app.post('/create-checkout-session', async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
-
 
 connectDB().then(() => {
   app.listen(PORT, () => {
