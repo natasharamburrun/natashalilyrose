@@ -4,34 +4,38 @@
     "productName": "Sterling Silver London Blue Topaz Ring",
     "size": "L",
     "productDescription": "London blue 6mm round topaz set in sterling silver bezel set ring, polished mirror high shine finish",
-    "price": 295.0,
+    "price": 195.0,
     "image": "https://natashalilyrosestorage.s3.eu-west-2.amazonaws.com/productimage-bluelondontopazsilver.jpg"
   },
   {
     "id": 2,
-    "productName": "9ct gold nugget earings",
-    "productDescription": "yellow gold",
-    "price": 789.0,
+    "productName": "Sterling Silver London Amethyst Ring",
+    "size": "L",
+    "productDescription": "London amethyst 6mm round amethyst set in sterling silver bezel set ring, polished mirror high shine finish",
+    "price": 195.0,
     "image": "https://natashalilyrosestorage.s3.eu-west-2.amazonaws.com/ProductImage-SilverAmatystcollet.jpg"
   },
   {
     "id": 3,
-    "productName": "sterling silver ring",
-    "productDescription": "bubbling ring",
-    "price": 295.0,
+    "productName": "Sterling Silver London Blue Topaz Ring",
+    "size": "L",
+    "productDescription": "London blue 5mm round topaz set in sterling silver bezel set ring, polished mirror high shine finish",
+    "price": 185.0,
     "image": "https://natashalilyrosestorage.s3.eu-west-2.amazonaws.com/ProductImageTopazSilvering.jpg"
   },
   {
     "id": 4,
-    "productName": "sterling silver ring",
-    "productDescription": "bubbling ring",
+    "productName": "Sterling Silver Chain",
+    "size": "18inch",
+    "productDescription": "Sterling silver chain with 3 different link styles",
     "price": 295.0,
     "image": "https://natashalilyrosestorage.s3.eu-west-2.amazonaws.com/fancychain.jpg"
   },
   {
     "id": 5,
-    "productName": "sterling silver ring",
-    "productDescription": "bubbling ring",
+    "productName": "Sterling Silver Paperclip Chain",
+    "size": "18inch",
+    "productDescription": "Sterling silver paperclip chain necklace, 18inch",
     "price": 295.0,
     "image": "https://natashalilyrosestorage.s3.eu-west-2.amazonaws.com/paperclipchain.jpg"
   }
