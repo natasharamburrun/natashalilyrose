@@ -6,6 +6,8 @@ import ProductPage from "./components/ProductPage";
 import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
 import Cart from "./components/Cart";
+import PaymentCancel from "./Pages/PaymentCancel";
+import PaymentSuccess from "./Pages/PaymentSuccess";
 
 import "./index.css";
 
@@ -20,6 +22,8 @@ function App() {
         <Route path="/About" element={<AboutPage />} />
         <Route path="/Contact" element={<ContactPage />} />
         <Route path="/Cart" element={<Cart />} />
+        <Route path="/success" element={<PaymentSuccess />} />
+        <Route path="/cancel" element={<PaymentCancel />} />
         <Route path="*" element={<HomePage />} />
       </Routes>
     </ReactRouter>

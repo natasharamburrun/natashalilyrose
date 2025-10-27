@@ -18,6 +18,7 @@ module.exports = {
           'brand-pinky': '#edded7;',
           'brand-beige': '#f0ebe8;',
           'brand-brown': '#917171;',
+          'brand-button-blue': '#112c4f'
       },
         backgroundColor: theme => ({
           ...theme('colors'),
