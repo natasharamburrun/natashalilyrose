@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+// import { loadStripe } from "@stripe/stripe-js";
 
 function Cart() {
   const {
@@ -25,6 +26,29 @@ function Cart() {
       type: "cart/applyTempUpdates",
       payload: { _id },
     });
+  };
+
+  const handlePayment = async () => {
+    // const stripe = await loadStripe('pk_live_UFVDvlJlaJSkK3YnswdRWVfI');
+    try {
+      const res = await fetch("http://localhost:8080/create-checkout-session", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ items: cartItems }),
+      });
+
+      const data = await res.json();
+      if (data.url) {
+        // redirect to Stripe Checkout
+        window.location.href = data.url;
+      } else {
+        console.error("Failed to create checkout session", data);
+      }
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   return (
@@ -169,7 +193,10 @@ function Cart() {
           <div>
             <div className="font-harlow text-brand-blue py-12 text-2xl text-end">{`SubTotal Price: £${totalPrice}`}</div>
 
-            <button className="font-neues flex flex-row justify-center self-center text-white text-center bg-blue-950 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 text-nowrap w-full md:w-24 md:justify-self-end mb-4">
+            <button
+              onClick={handlePayment}
+              className="font-neues flex flex-row justify-center self-center text-white text-center bg-blue-950 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 text-nowrap w-full md:w-24 md:justify-self-end mb-4"
+            >
               Checkout
             </button>
           </div>
