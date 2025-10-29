@@ -16,7 +16,7 @@ function HomePage() {
           </h3>
           <a
             href="/shop"
-            className="flex flex-row relative top-1 justify-center h-fit self-left text-white text-center w-24 font-neues flex flex-row justify-center self-center bg-brand-black hover:bg-brand-button-hover-grey focus:ring-4 focus:ring-brand-black-300 font-medium rounded-lg text-sm px-5 py-3 dark:bg-brand-black-600 dark:hover:bg-brand-button-hover-grey-700 focus:outline-none dark:focus:ring-brand-black-800 text-nowrap"
+            className="flex flex-row relative top-1 justify-center h-fit self-left text-white text-center w-24 font-neues flex flex-row justify-center self-center text-white text-center bg-blue-950 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 text-nowrap w-full md:w-24 md:justify-self-end mb-4"
             alt="call to action button to take you to the shop page"
           >
             SHOP
@@ -84,8 +84,7 @@ function HomePage() {
         </p>
         <a
           href="/about"
-          className="font-neues flex flex-row justify-center self-center text-white text-center w-24 bg-brand-black hover:bg-brand-button-hover-grey focus:ring-4 focus:ring-brand-black-300 font-medium rounded-lg text-sm px-5 py-3 dark:bg-brand-black-600 dark:hover:bg-brand-button-hover-grey-700 focus:outline-none dark:focus:ring-brand-black-800 text-nowrap"
-          alt="call to action button to take you to the about page"
+          className="font-neues flex flex-row justify-center self-center text-white text-center bg-blue-950 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 text-nowrap w-full md:w-24 md:justify-self-end mb-4"
         >
           ABOUT
         </a>
