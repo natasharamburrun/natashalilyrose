@@ -1,7 +1,19 @@
 //rafce
-
-import React from "react";
 import NewsletterForm from "./NewsletterForm";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
+
+const socialLinks = [
+  {
+    id: 1,
+    icon: <FaInstagram />,
+    url: "https://www.instagram.com/natashalilyrose/",
+  },
+  {
+    id: 2,
+    icon: <FaFacebook />,
+    url: "https://www.facebook.com/profile.php?id=61575853972500",
+  },
+];
 
 const Footer = () => {
   return (
@@ -11,6 +23,18 @@ const Footer = () => {
           <h3 className="text-md font-bold font-harlow text-brand-blue">
             Socials
           </h3>
+          <ul className="flex gap-2 lg:gap-4 py-4">
+            {socialLinks.map((link) => (
+              <a
+                href={link.url}
+                target="__blank"
+                key={link.id}
+                className="text-brand-blue-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm duration-300"
+              >
+                <i className="text-md lg:text-2xl">{link.icon}</i>
+              </a>
+            ))}
+          </ul>
         </div>
         <div>
           <h3 className="text-md font-bold font-harlow text-brand-blue">
