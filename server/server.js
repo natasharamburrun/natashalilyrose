@@ -41,7 +41,10 @@ app.post('/create-checkout-session', async (req, res) => {
 
     console.log('line_items payload:', JSON.stringify(line_items, null, 2));
 
+    const shippingRate = await stripe.shippingRates.retrieve('shr_1SNs52DP1vYuSt1TBkIpheiL');
+
     const session = await stripe.checkout.sessions.create({
+
       payment_method_types: ['card'],
       mode: 'payment',
       line_items,
@@ -55,8 +58,13 @@ app.post('/create-checkout-session', async (req, res) => {
       },
       billing_address_collection: 'required',
       shipping_address_collection: {
-      allowed_countries: ['GB'],  
+        allowed_countries: ['GB'],
       },
+      shipping_options: [
+        {
+          shipping_rate: shippingRate.id,
+        },
+      ],
     });
 
     res.json({ url: session.url });
