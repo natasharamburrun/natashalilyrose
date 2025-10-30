@@ -1,4 +1,3 @@
-import Footer from "../Pages/Footer";
 import bannerimage1 from "../assets/images/3ring-homepage-banner.jpg";
 import bannerimage2 from "../assets/images/rings-homepage-banner.jpg";
 import bannerimage3 from "../assets/images/chain-homepage-banner.jpg";
@@ -89,7 +88,6 @@ function HomePage() {
           ABOUT
         </a>
       </div>
-      <Footer />
     </div>
   );
 }

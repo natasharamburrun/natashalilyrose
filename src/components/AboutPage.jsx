@@ -1,7 +1,6 @@
 import React from "react";
 import aboutme from "../assets/images/Brand-photography/AboutMeProfilePic.jpg";
 import aboutmedesign from "../assets/images/Brand-photography/polishing-colour.jpg";
-// import aboutpagehero from "../assets/images/Brand-photography/aboutpageherob-w.jpg";
 
 const AboutPage = () => {
   return (
@@ -49,7 +48,7 @@ const AboutPage = () => {
           </p>
         </div>
       </div>
-      <div className="justify-center bg-primary md:grid md:grid-cols-2 md:gap-4 md-p-5">
+      <div className="h-screen justify-center bg-primary md:grid md:grid-cols-2 md:gap-4 md-p-5">
         <div>
           <div className="p-8">
             <div className="h-0.5 bg-secondary w-14 mx-auto m-12 md:hidden"></div>
