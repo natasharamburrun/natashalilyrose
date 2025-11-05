@@ -109,7 +109,7 @@ export default function ContactUsForm() {
 
         <button
           type="submit"
-          className="font-neues w-full py-4 font-semibold text-white transition-colors bg-brand-blue rounded-md hover:bg-gray-800 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 font-neues"
+          className="font-neues w-full py-4 font-semibold text-white transition-colors bg-brand-blue rounded-md hover:bg-gray-800 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7"
         >
           {isSubmitting ? (
             <svg

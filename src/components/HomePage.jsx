@@ -15,7 +15,7 @@ function HomePage() {
           </h3>
           <a
             href="/shop"
-            className="flex flex-row relative top-1 justify-center h-fit self-left text-white text-center w-24 font-neues flex flex-row justify-center self-center text-white text-center bg-blue-950 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 text-nowrap w-full md:w-24 md:justify-self-end mb-4"
+            className="flex flex-row relative top-1 justify-center h-fit self-left text-white text-center w-24 font-neues flex flex-row justify-center self-center bg-brand-blue hover:bg-brand-blue-900 focus:ring-4 focus:ring-brand-blue-300 font-medium rounded-lg text-md px-5 py-3 dark:bg-brand-blue-600 dark:hover:bg-brand-blue-700 dark:focus:ring-brand-blue-800 text-nowrap w-full md:w-24 md:justify-self-end mb-4"
             alt="call to action button to take you to the shop page"
           >
             SHOP
@@ -72,7 +72,7 @@ function HomePage() {
         </div>
       </div>
       <div className="h-screen w-screen bg-tertiary flex flex-col p-6 justify-center">
-        <p className="font-neues text-md leading-8 md:text-2xl tracking-wide font-semibold text-blue-950 text-center content-center mb-1 py-[2rem] lg:p-16">
+        <p className="font-neues text-md leading-8 md:text-2xl tracking-wide font-semibold text-blue text-center content-center mb-1 py-[2rem] lg:p-16">
           Natasha Lily Rose is a handmade jewellery brand dedicated to creating
           timeless pieces in sterling silver, gold, and precious gemstones.
           Every design blends elegance and sentiment, crafted with care to
@@ -83,7 +83,7 @@ function HomePage() {
         </p>
         <a
           href="/about"
-          className="font-neues flex flex-row justify-center self-center text-white text-center bg-blue-950 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 text-nowrap w-full md:w-24 md:justify-self-end mb-4"
+          className="font-neues flex flex-row justify-center self-center text-white text-center bg-brand-blue hover:bg-brand-blue-900 focus:ring-4 focus:ring-brand-blue-300 font-medium rounded-lg text-md px-5 py-3 dark:bg-brand-blue-600 dark:hover:bg-brand-blue-700 dark:focus:ring-brand-blue-800 text-nowrap w-full md:w-24 md:justify-self-end mb-4"
         >
           ABOUT
         </a>
