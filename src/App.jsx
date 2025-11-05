@@ -8,12 +8,17 @@ import ContactPage from "./components/ContactPage";
 import Cart from "./components/Cart";
 import PaymentCancel from "./Pages/PaymentCancel";
 import PaymentSuccess from "./Pages/PaymentSuccess";
+import AnnouncementBanner from "./Pages/AnnouncementBanner";
+import Footer from "./Pages/Footer";
+import TermsAndConditions from "./Pages/TermsAndConditions";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
 
 import "./index.css";
 
 function App() {
   return (
     <ReactRouter>
+      <AnnouncementBanner />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -25,7 +30,10 @@ function App() {
         <Route path="/success" element={<PaymentSuccess />} />
         <Route path="/cancel" element={<PaymentCancel />} />
         <Route path="*" element={<HomePage />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
+      <Footer />
     </ReactRouter>
   );
 }
