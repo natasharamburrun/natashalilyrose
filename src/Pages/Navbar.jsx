@@ -30,22 +30,28 @@ const Navbar = () => {
             className="bx bx-menu md:hidden block curser-pointer absolute top-6 left-0 pt-4 pl-4"
             onClick={() => setNavbarOpen(!navbarOpen)}
           ></i>
-          <div
+          <ul
             className={`static md:hidden top-19 left-0 w-full bg-primary flex flex-col items-center font-semibold text-lg leading-8 tracking-wide transform transition-transform ${
               navbarOpen ? "opacity-100" : "opacity-0 hidden"
             } `}
             style={{ transition: "transform 0.2s ease, opacity 0.2s ease" }}
           >
             <li className="font-neues text-brand-blue list-none text-center curser-pointer hover:text-brand-brown">
-              <Link to="/shop">Shop</Link>
+              <Link to="/shop" onClick={() => setNavbarOpen(false)}>
+                Shop
+              </Link>
             </li>
             <li className="font-neues text-brand-blue list-none text-center curser-pointer hover:text-brand-brown">
-              <Link to="/about">About</Link>
+              <Link to="/about" onClick={() => setNavbarOpen(false)}>
+                About
+              </Link>
             </li>
             <li className="font-neues text-brand-blue list-none text-center curser-pointer hover:text-brand-brown">
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact" onClick={() => setNavbarOpen(false)}>
+                Contact
+              </Link>
             </li>
-          </div>
+          </ul>
         </div>
       </div>
       <div>
