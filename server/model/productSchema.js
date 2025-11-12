@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const productSchema = mongoose.Schema({
   productName: {
@@ -23,7 +23,6 @@ const productSchema = mongoose.Schema({
     type: String,
   },
 });
+const ProductModel = mongoose.model("Product", productSchema);
 
-const ProductModel = mongoose.model("product", productSchema);
-
-module.exports = ProductModel;
+export default ProductModel;
