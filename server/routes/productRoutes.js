@@ -1,11 +1,9 @@
-/* eslint-disable no-undef */
-
-const express = require("express");
-const {returnAllProducts, returnProduct} = require("../controllers/productController.jsx");
+import express from "express"
+import { returnAllProducts, returnProduct } from "../controllers/productController.js";
 
 const router = express.Router();
 
 router.get("/", returnAllProducts);
 router.get("/:id", returnProduct)
 
-module.exports = router
+export default router;

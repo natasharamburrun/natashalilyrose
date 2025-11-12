@@ -1,14 +1,13 @@
-import { createRequire } from "module";
-const require = createRequire(import.meta.url);
-const connectDB = require("./config/db");
-const dotenv = require("dotenv");
-dotenv.config();
-const express = require("express");
-const cors = require("cors");
-const productRoutes = require("./routes/productRoutes")
-// eslint-disable-next-line no-undef
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import Stripe from "stripe";
+import {connectDB} from "./config/db.js";
+import productRoutes from "./routes/productRoutes.js";
 
+dotenv.config();
+
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 const app = express();
 const PORT = 8080;
 

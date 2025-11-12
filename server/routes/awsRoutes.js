@@ -1,25 +1,25 @@
-/* eslint-disable no-undef */
-
-const express = require("express")
-// const connectDB = require("./config/db");
-const ObjectId = require("mongodb").ObjectId
-require("dotenv").config({path: "./config.env"})
-
+import express from "express"
+import dotenv from "dotenv";
 const { S3Client, PutObjectCommand, GetObjectCommand } = require("@aws-sdk/client-s3")
 
-let awsRoutes = express.Router()
+dotenv.config();
+
+const ObjectId = require("mongodb").ObjectId
+
+
+const awsRoutes = express.Router();
 // const s3Bucket = "natashalilyrosestorage"
 
 const s3Client = new S3Client({
     region: "eu-west-2",
-    Credential: {
+    credentials: {
         accessKeyId: process.env.AWS_ACCESS_KEY,
         secretAccessKey: process.env.AWS_SECRET_KEY
     }
 
 })
 
-exports.getObject = async(key) => {
+export const getObject = async(key) => {
     try {
         const params = {
             Bucket: process.env.AWS_S3_BUCKET, 
@@ -35,4 +35,4 @@ exports.getObject = async(key) => {
     }
 }
 
-module.exports = awsRoutes
+export default awsRoutes

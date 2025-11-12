@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
 
-const ProductModel = require("../model/productSchema.jsx");
+import ProductModel from "../model/productSchema.js";
 
 //return all data
-const returnAllProducts = async (req, res) => {
+export const returnAllProducts = async (req, res) => {
   try {
     const productData = await ProductModel.find();
     res.json(productData);
@@ -13,7 +13,7 @@ const returnAllProducts = async (req, res) => {
 };
 
 //return data for product
-const returnProduct = async (req, res) => {
+export const returnProduct = async (req, res) => {
   try {
     const { id } = req.params;
 
@@ -27,4 +27,3 @@ const returnProduct = async (req, res) => {
     console.log("error is", error.message);
   }
 };
-module.exports = { returnAllProducts, returnProduct };
