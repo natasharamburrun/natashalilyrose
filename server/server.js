@@ -4,6 +4,8 @@ import dotenv from "dotenv";
 import Stripe from "stripe";
 import {connectDB} from "./config/db.js";
 import productRoutes from "./routes/productRoutes.js";
+import awsRoutes from "./routes/awsRoutes.js";
+
 
 dotenv.config();
 
@@ -13,6 +15,8 @@ const PORT = 8080;
 
 app.use(cors());
 app.use(express.json());
+app.use("/api/aws", awsRoutes);
+
 
 //routes
 app.use("/api/products", productRoutes)
