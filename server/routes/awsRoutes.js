@@ -1,10 +1,10 @@
 import express from "express"
 import dotenv from "dotenv";
-const { S3Client, PutObjectCommand, GetObjectCommand } = require("@aws-sdk/client-s3")
+import { S3Client, PutObjectCommand, GetObjectCommand } from "@aws-sdk/client-s3";
 
 dotenv.config();
 
-const ObjectId = require("mongodb").ObjectId
+// const ObjectId = require("mongodb").ObjectId
 
 
 const awsRoutes = express.Router();
