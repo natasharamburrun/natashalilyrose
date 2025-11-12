@@ -3,8 +3,8 @@ import ProductModel from "../model/productSchema.js";
 //return all data
 export const returnAllProducts = async (req, res) => {
   try {
-    const productData = await ProductModel.find();
-    res.json(productData);
+    const productsData = await ProductModel.find();
+    res.json(productsData);
   } catch (error) {
     console.log("error is", error);
   }
