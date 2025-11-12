@@ -6,7 +6,7 @@ import ProductModel from "../model/productSchema.js";
 export const connectDB = async () => {
   try {
     const dbURI = await mongoose.connect(process.env.MONGO_URI);
-    console.log(`MondoDB connected: ${dbURI.connection.host}`);
+    console.log(`MongoDB connected: ${dbURI.connection.host}`);
 
     const productCount = await ProductModel.countDocuments();
 
