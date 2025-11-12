@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-import productJson from "../data/productData.json" with { type: "json" };
+import productJson from "../data/productsData.json" with { type: "json" };
 import ProductModel from "../model/productSchema.js";
 
 export const connectDB = async () => {
