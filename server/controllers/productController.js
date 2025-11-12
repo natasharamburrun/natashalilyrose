@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-
 import ProductModel from "../model/productSchema.js";
 
 //return all data
