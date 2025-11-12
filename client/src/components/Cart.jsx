@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 // import { loadStripe } from "@stripe/stripe-js";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function Cart() {
   const {
@@ -31,7 +32,7 @@ function Cart() {
   const handlePayment = async () => {
     // const stripe = await loadStripe('pk_live_UFVDvlJlaJSkK3YnswdRWVfI');
     try {
-      const res = await fetch("http://localhost:8080/create-checkout-session", {
+      const res = await fetch(`${API_URL}/create-checkout-session`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -6,7 +6,7 @@ const API_URL = import.meta.env.VITE_API_URL;
 export const fetchItemById = createAsyncThunk(
   "singleProduct/fetchItemById",
   async (id) => {
-    const response = await axios.get(`${API_URL}/products/${id}`);
+    const response = await axios.get(`${API_URL}/api/products/${id}`);
     return response.data;
   }
 );

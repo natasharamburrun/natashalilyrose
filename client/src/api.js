@@ -1,7 +1,7 @@
 
 import axios from "axios";
 
-const URL = "http://localhost:8080"
+const URL = "http://localhost:3000"
 
 export async function getProducts() {
   const response = await axios.get(`${URL}/api/products`)
