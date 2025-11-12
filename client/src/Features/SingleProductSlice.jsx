@@ -1,12 +1,12 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 export const fetchItemById = createAsyncThunk(
   "singleProduct/fetchItemById",
   async (id) => {
-    const response = await axios.get(
-      `http://localhost:8080/api/products/${id}`
-    );
+    const response = await axios.get(`${API_URL}/products/${id}`);
     return response.data;
   }
 );
