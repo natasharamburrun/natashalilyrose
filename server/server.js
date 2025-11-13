@@ -10,6 +10,8 @@ import awsRoutes from "./routes/awsRoutes.js";
 dotenv.config();
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+const shippingRateId = process.env.STRIPE_SHIPPING_RATE;
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -44,7 +46,7 @@ app.post('/create-checkout-session', async (req, res) => {
 
     console.log('line_items payload:', JSON.stringify(line_items, null, 2));
 
-    const shippingRate = await stripe.shippingRates.retrieve('shr_1SNs52DP1vYuSt1TBkIpheiL');
+    const shippingRate = await stripe.shippingRates.retrieve(shippingRateId);
 
     const session = await stripe.checkout.sessions.create({
 
