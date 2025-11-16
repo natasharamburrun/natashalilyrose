@@ -12,12 +12,14 @@ import AnnouncementBanner from "./Pages/AnnouncementBanner";
 import Footer from "./Pages/Footer";
 import TermsAndConditions from "./Pages/TermsAndConditions";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import ScrollToTop from "./Pages/ScrollToTop";
 
 import "./index.css";
 
 function App() {
   return (
     <ReactRouter>
+      <ScrollToTop />
       <AnnouncementBanner />
       <Navbar />
       <Routes>
