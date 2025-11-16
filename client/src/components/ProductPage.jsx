@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import { fetchItemById } from "../Features/SingleProductSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "../Features/cartSlice";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 function ProductPage() {
   const { id } = useParams();
@@ -21,9 +23,9 @@ function ProductPage() {
       <div className="w-screen h-screen bg-primary">
         <div className="bg-primary p-3 md:grid md:grid-cols-2 md:gap-4 md-p-8 lg:grid-cols-2">
           <div>
-            <img
-              className="w-80 flex justify-self-center"
+            <LazyLoadImage
               src={product.image}
+              className="w-80 flex justify-self-center"
               alt={`Image of ${product.productName}`}
             />
           </div>

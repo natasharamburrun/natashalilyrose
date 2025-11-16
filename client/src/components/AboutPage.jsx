@@ -48,7 +48,7 @@ const AboutPage = () => {
           </p>
         </div>
       </div>
-      <div className="h-screen justify-center bg-primary md:grid md:grid-cols-2 md:gap-4 md-p-5">
+      <div className="md-h-screen justify-center bg-primary md:grid md:grid-cols-2 md:gap-4 md-p-5">
         <div>
           <div className="p-8">
             <div className="h-0.5 bg-secondary w-14 mx-auto m-12 md:hidden"></div>
