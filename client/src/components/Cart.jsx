@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-// import { loadStripe } from "@stripe/stripe-js";
 const API_URL = import.meta.env.VITE_API_URL;
 
 function Cart() {
@@ -30,7 +29,6 @@ function Cart() {
   };
 
   const handlePayment = async () => {
-    // const stripe = await loadStripe('pk_live_UFVDvlJlaJSkK3YnswdRWVfI');
     try {
       const res = await fetch(`${API_URL}/create-checkout-session`, {
         method: "POST",
@@ -42,7 +40,6 @@ function Cart() {
 
       const data = await res.json();
       if (data.url) {
-        // redirect to Stripe Checkout
         window.location.href = data.url;
       } else {
         console.error("Failed to create checkout session", data);
