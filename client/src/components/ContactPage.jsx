@@ -2,7 +2,7 @@ import ContactUsForm from "../Pages/ContactUsForm";
 
 function ContactPage() {
   return (
-    <div className="bg-primary md:h-screen md:w-screen">
+    <div className="bg-primary lg:h-screen md:w-screen">
       <div className="max-w-6xl mx-auto p-4 md:p-16 xl:p-20">
         <div className="text-center mx-auto">
           <h2 className="font-harlow font-bold text-brand-blue leading-8 text-2xl md:text-3xl lg:text-4xl my-8 text-center uppercase">

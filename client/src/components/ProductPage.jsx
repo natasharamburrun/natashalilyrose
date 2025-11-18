@@ -10,17 +10,33 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 function ProductPage() {
   const { id } = useParams();
   const dispatch = useDispatch();
-  const { item: product } = useSelector((state) => state.singleProduct);
+  const { item: product, error, status } = useSelector((state) => state.singleProduct);
+ useEffect(() => {
+   const promise = dispatch(fetchItemById(id));
 
-  useEffect(() => {
-    if (id && id !== product.id) {
-      dispatch(fetchItemById(id));
-    }
-  }, [id, product.id, dispatch]);
+   // abort the request if the component unmounts or id changes
+   return () => {
+     if (promise && typeof promise.abort === "function") {
+       promise.abort();
+     }
+   };
+ }, [dispatch, id]);
+
+ if (status === "loading" && !product) {
+   return <div>Loading product...</div>;
+ }
+
+ if (error) {
+   return <div>Error: {error}</div>;
+ }
+
+ if (!product) {
+   return <div>Loading product...</div>;
+ }
 
   return (
     <div>
-      <div className="w-screen h-screen bg-primary">
+      <div className="md:w-screen md:h-screen bg-primary">
         <div className="bg-primary p-3 md:grid md:grid-cols-2 md:gap-4 md-p-8 lg:grid-cols-2">
           <div>
             <LazyLoadImage
