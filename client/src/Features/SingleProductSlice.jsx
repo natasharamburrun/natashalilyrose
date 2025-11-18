@@ -17,7 +17,7 @@ const singleProductSlice = createSlice({
   name: "singleProduct",
   initialState: {
     loading: false,
-    item: null,
+    item: [],
     status: "idle",
     error: null,
   },
@@ -35,9 +35,8 @@ const singleProductSlice = createSlice({
         state.loading = false;
       })
       .addCase(fetchItemById.rejected, (state, action) => {
-        state.loading = false;
+        state.loading = false; 
         if (action.error?.name === "AbortError") {
-          // request was aborted — treat as idle or keep previous item
           state.status = "idle";
         } else {
           state.status = "failed";
