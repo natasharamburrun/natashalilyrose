@@ -7,11 +7,8 @@ function HomePage() {
     <div>
       <div className="pt-5 w-screen bg-primary">
         <div className="flex flex-col md:flex-row justify-self-center lg:justify-center pb-6 md:pb-4 items-center md:items-start">
-          <h3 className="font-harlow font-medium flex flex-row justify-center text-blue-950  text-nowrap text-xl md:text-5xl md:pr-8">
-            <span className="font-margo text-xxl font-light pr-3 md:pr-5 pt-0.5 md:pt-1">
-              Shop
-            </span>
-            Collection
+          <h3 className="font-harlow font-md flex flex-row justify-center text-brand-blue text-nowrap text-xl md:text-5xl md:pr-8">
+            SHOP COLLECTION
           </h3>
           <a
             href="/shop"
