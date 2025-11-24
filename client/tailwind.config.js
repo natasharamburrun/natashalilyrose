@@ -21,6 +21,7 @@ module.exports = {
           'brand-button-blue': '#112c4f',
           'brand-button-hover-grey':'#b1b0ac',
           'brand-green-blue': '#49646a',
+          'brand-bronze': '#c8b69a',
       },
         backgroundColor: theme => ({
           ...theme('colors'),

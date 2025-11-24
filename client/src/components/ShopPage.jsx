@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-// import { getProducts } from "../api";
 import { ItemCard } from "../components/ItemCard";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchProducts } from "../Features/ProductsSlice";
@@ -25,7 +24,7 @@ function ShopPage() {
 
   return (
     <div className="shop-content">
-      <div className="bg-primary p-3 md:grid md:grid-cols-2 md:gap-4 md-p-5 lg:grid-cols-3">
+      <div className="bg-primary p-3 md:grid md:grid-cols-2 md:gap-3 md-p-3 lg:grid-cols-3">
         {products.map((product) => {
           return <ItemCard product={product} key={product._id} />;
         })}
