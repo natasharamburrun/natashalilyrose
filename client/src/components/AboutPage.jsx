@@ -11,6 +11,8 @@ const AboutPage = () => {
             className="object-center w-full max-w-md"
             src={aboutme}
             alt="A photo of the business owner from her work bench"
+            width="400"
+            height="600"
           />
         </div>
         <div className="p-8 content-center">

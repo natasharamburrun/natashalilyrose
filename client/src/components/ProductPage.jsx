@@ -33,7 +33,7 @@ function ProductPage() {
         <div className="bg-primary p-3 md:grid md:grid-cols-2 md:gap-4 md-p-8 lg:grid-cols-2">
           <div>
             <LazyLoadImage
-              src={product.thumbnailUrl || product.image}
+              src={product.image}
               className="w-80 flex justify-self-center"
               alt={`Image of ${product.productName}`}
               width="300"
