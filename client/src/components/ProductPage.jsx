@@ -5,6 +5,7 @@ import { fetchItemById } from "../Features/SingleProductSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "../Features/cartSlice";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { openModal } from "../Features/modalSlice";
 
 
 function ProductPage() {
@@ -62,8 +63,8 @@ function ProductPage() {
             </p>
             <button
               className="font-neues flex flex-row justify-center self-center text-white text-center w-24 bg-blue-950 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 text-nowrap"
-              alt="call to action button to take you to the cart page"
-              onClick={() => dispatch(addToCart(product))}
+              aria-label="Add product to cart"
+              onClick={() => { dispatch(addToCart(product)); dispatch(openModal()); }}
             >
               Add to Cart
             </button>

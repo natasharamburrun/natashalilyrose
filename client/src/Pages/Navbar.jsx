@@ -1,10 +1,12 @@
 import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { FaBagShopping } from "react-icons/fa6";
+import { openModal } from "../Features/modalSlice"
 
 
 const Navbar = () => {
+   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart.items);
   const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -58,12 +60,12 @@ const Navbar = () => {
       </div>
       <div>
         <div className="absolute top-9 right-4 text-md md:text-lg md:top-12 md:right-12 text-brand-blue tracking-wide md:tracking-widest">
-          <Link to="/cart">
+          <button onClick={() => dispatch(openModal())}>
             <div className="flex items-center font-neues font-bold">
               <FaBagShopping />
               <div className="">({cartItems.length})</div>
             </div>
-          </Link>
+          </button>
         </div>
       </div>
     </div>
