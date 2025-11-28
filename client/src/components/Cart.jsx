@@ -51,7 +51,7 @@ function Cart() {
 
   return (
     <div className="w-screen bg-primary min-h-screen p-8">
-      <h2 className="font-harlow text-brand-blue text-2xl text-nowrap text-center pb-16">
+      <h2 className="font-neues text-brand-blue text-4xl text-nowrap text-center pb-16">
         Shopping Cart
       </h2>
       {cartItems.length === 0 ? (
@@ -59,7 +59,7 @@ function Cart() {
           <h2 className="p-4">Your cart is currently empty.</h2>
           <Link
             to="/shop"
-            className="font-neues flex flex-row justify-center self-center text-white text-center  bg-blue-950 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 text-nowrap justify-self-center w-60 md:w-96 mb-4"
+            className="font-neues flex flex-row justify-center self-center text-white text-center bg-brand-blue hover:bg-brand-blue-900 focus:ring-4 focus:ring-brand-blue-300 font-medium text-md px-5 py-3 dark:bg-brand-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 text-nowrap justify-self-center w-60 md:w-96 mb-4"
           >
             Continue Shopping
           </Link>
@@ -67,7 +67,7 @@ function Cart() {
       ) : (
         <div className="cart-container">
           {cartItems.map((item) => (
-            <div className="font-harlow text-brand-blue" key={item._id}>
+            <div className="font-neues text-brand-blue" key={item._id}>
               <div className="cart-items-summary">
                 <div className="text-center ">
                   {/* // Mobile View */}
@@ -189,11 +189,11 @@ function Cart() {
             </div>
           ))}
           <div>
-            <div className="font-harlow text-brand-blue py-12 text-2xl text-end">{`SubTotal Price: £${totalPrice}`}</div>
+            <div className="font-neues text-brand-blue py-12 text-2xl text-end pr-5">{`Subtotal  £${totalPrice}`}</div>
 
             <button
               onClick={handlePayment}
-              className="font-neues flex flex-row justify-center self-center text-white text-center bg-blue-950 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 text-nowrap w-full md:w-24 md:justify-self-end mb-4"
+              className="font-neues flex flex-row justify-center self-center text-white text-center bg-brand-black focus:ring-4 focus:ring-brand-white-300 font-medium text-md px-5 py-3 text-nowrap mb-4 mr-4 text-nowrap w-60 md:justify-self-end mb-4"
             >
               Checkout
             </button>

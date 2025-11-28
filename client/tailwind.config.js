@@ -16,6 +16,7 @@ module.exports = {
           'brand-white': '#e2d8d7;',
           'brand-blue': '#323b5d;',
           'brand-pinky': '#edded7;',
+          'brand-pink': '#cea19e;',
           'brand-beige': '#f0ebe8;',
           'brand-brown': '#917171;',
           'brand-button-blue': '#112c4f',

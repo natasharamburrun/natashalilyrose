@@ -1,4 +1,5 @@
 import { BrowserRouter as ReactRouter, Route, Routes } from "react-router-dom";
+import ReactModal from "react-modal";
 import Navbar from "./Pages/Navbar";
 import HomePage from "./components/HomePage";
 import ShopPage from "./components/ShopPage";
@@ -15,6 +16,10 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import ScrollToTop from "./Pages/ScrollToTop";
 
 import "./index.css";
+import CheckoutModal from "./Pages/CheckoutModal";
+
+ReactModal.setAppElement("#root");
+
 
 function App() {
   return (
@@ -35,6 +40,7 @@ function App() {
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
+      <CheckoutModal />
       <Footer />
     </ReactRouter>
   );
