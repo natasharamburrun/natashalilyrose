@@ -62,11 +62,11 @@ function ProductPage() {
               In Stock ready to ship
             </p>
             <button
-              className="font-neues flex flex-row justify-center self-center text-white text-center w-24 bg-blue-950 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 text-nowrap"
+              className="font-neues flex flex-row justify-center self-center text-white text-center bg-brand-blue focus:ring-4 focus:ring-brand-white-300 font-medium text-md px-5 py-3 text-nowrap w-28 mb-4 mr-4 tracking-widest"
               aria-label="Add product to cart"
               onClick={() => { dispatch(addToCart(product)); dispatch(openModal()); }}
             >
-              Add to Cart
+              Add To Cart
             </button>
           </div>
         </div>
