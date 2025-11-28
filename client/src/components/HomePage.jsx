@@ -12,7 +12,7 @@ function HomePage() {
           </h3>
           <a
             href="/shop"
-            className="flex flex-row relative top-1 justify-center h-fit self-left text-white text-center w-24 font-neues flex flex-row justify-center self-center bg-brand-blue hover:bg-brand-blue-900 focus:ring-4 focus:ring-brand-blue-300 font-medium rounded-lg text-md px-5 py-3 dark:bg-brand-blue-600 dark:hover:bg-brand-blue-700 dark:focus:ring-brand-blue-800 text-nowrap w-full md:w-24 md:justify-self-end mb-4"
+            className="font-neues flex flex-row justify-center self-center text-white text-center bg-brand-blue focus:ring-4 focus:ring-brand-white-300 font-medium text-md px-5 py-3 text-nowrap w-28 mb-4 mr-4 tracking-widest"
             alt="call to action button to take you to the shop page"
           >
             SHOP
@@ -80,7 +80,7 @@ function HomePage() {
         </p>
         <a
           href="/about"
-          className="font-neues flex flex-row justify-center self-center text-white text-center bg-brand-blue hover:bg-brand-blue-900 focus:ring-4 focus:ring-brand-blue-300 font-medium rounded-lg text-md px-5 py-3 dark:bg-brand-blue-600 dark:hover:bg-brand-blue-700 dark:focus:ring-brand-blue-800 text-nowrap w-full md:w-24 md:justify-self-end mb-4"
+          className="font-neues flex flex-row justify-center self-center text-white text-center bg-brand-blue focus:ring-4 focus:ring-brand-white-300 font-medium text-md px-5 py-3 text-nowrap tracking-widest w-28 mb-4 mr-4"
         >
           ABOUT
         </a>
