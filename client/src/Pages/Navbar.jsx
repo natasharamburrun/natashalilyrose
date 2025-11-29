@@ -10,9 +10,7 @@ import { openModal } from "../Features/modalSlice"
 const Navbar = () => {
    const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart.items);
-  const [navbarOpen, setNavbarOpen] = useState(false);
-  const [navbarClose, setNavbarClose ] = useState(false)
-
+  const [navbarOpen, setNavbarOpen] = useState(false)
   return (
     <div className="sticky top-10 md:top-12 z-10 w-full flex-no-wrap bg-primary md:flex md:flex-start">
       <div className="p-4 md:p-8 justify-items-between-items-center items-center ">
