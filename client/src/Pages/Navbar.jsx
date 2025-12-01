@@ -5,14 +5,15 @@ import { FaBagShopping } from "react-icons/fa6";
 import { IoCloseOutline } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { openModal } from "../Features/modalSlice"
+import { setSearchTerm, selectSearchTerm } from "../Features/filterSlice";
 
 
 const Navbar = () => {
-   const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart.items);
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const [navbarClose, setNavbarClose ] = useState(false)
-
+  const searchTerm = useSelector(selectSearchTerm);
+  
   return (
     <div className="sticky top-10 md:top-12 z-10 w-full flex-no-wrap bg-primary md:flex md:flex-start">
       <div className="p-4 md:p-8 justify-items-between-items-center items-center ">
@@ -33,7 +34,6 @@ const Navbar = () => {
               <Link to="/contact">CONTACT</Link>
             </li>
           </ul>
-
           <button
             className="md:hidden absolute top-6 left-0
             pt-4 pl-4"
@@ -72,9 +72,19 @@ const Navbar = () => {
         </div>
       </div>
       <div>
-        <div className="absolute top-9 right-4 text-md md:text-lg md:top-12 md:right-12 text-brand-blue tracking-wide md:tracking-widest">
+        <div className="">
+          <div className="hidden md:flex flex-1 w:1/4">
+            <input
+              type="search"
+              placeholder="SEARCH"
+              value={searchTerm}
+              onChange={(e) => dispatch(setSearchTerm(e.target.value))}
+              className="w-1/4 p-2 border absolute top-10 right-28"
+              aria-label="Search products"
+            />
+          </div>
           <button onClick={() => dispatch(openModal())}>
-            <div className="flex items-center font-neues font-bold">
+            <div className="flex items-center font-neues font-bold absolute top-9 right-4 text-md md:text-lg md:top-12 md:right-12 text-brand-blue tracking-wide md:tracking-widest">
               <FaBagShopping />
               <div className="">({cartItems.length})</div>
             </div>
